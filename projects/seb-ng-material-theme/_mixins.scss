@@ -1,0 +1,52 @@
+////
+/// These are mixins used in the Angular Material Pattern Library
+/// @group Public Web
+/// @author Public Web Team
+////
+
+
+@function seb-mat-color-variation($baseColor, $variation) {
+  $variations: (A100, A200, A400, A500, A700);
+  $i: index($variations, $variation);
+  @if $i != null {
+    @if $i > 3 {
+      @return darken(adjust_hue($baseColor, 7.2), ($i - 3) * 11.2 );
+    } @else {
+      @return lighten(adjust_hue($baseColor, 7.2), (3 - $i) * 11.2 );
+    }
+  }
+  $variations: (50 ,100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1050);
+  $maxVar: 36;
+  $mid: length($variations) / 2;
+  $dist: $mid - 1;
+  $step: $maxVar / $dist;
+  $i: index($variations, $variation);
+  $percent: $maxVar - ($step * ($i - 1));
+  @if $percent < 0 {
+    @return desaturate(darken($baseColor, -$percent), 3.6);
+  }
+  @return lighten($baseColor, $percent);
+}
+
+@function seb-mat-palette($baseColor) {
+  $variations: (50 ,100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400, A700);
+  $contrast: (); 
+  $colors: ();
+  @each $key in $variations {
+    $color: seb-mat-color-variation($baseColor, $key);
+    $red: red($color);
+    $green: green($color);
+    $blue: blue($color);
+    // @debug "Colors " $color $red $green $blue; 
+    $colors: map-merge($colors , ($key : $color) );
+    @if ($red*0.299 + $green*0.587 + $blue*0.114) > 186 {
+      $contrast: map-merge($contrast, ($key :$sebvi-color-black));
+    } @else {
+      $contrast: map-merge($contrast, ($key :$sebvi-color-white));
+    }
+    
+  }
+  $colors: map-merge($colors, (contrast : $contrast));
+  // @debug "Colors " $colors; 
+  @return $colors;
+}

@@ -1,0 +1,8 @@
+$seb-font-basepath: '/assets/fonts/';
+@import 'node_modules/@sebdesignlibrary/visual-identity/src/_typography';
+
+$seb-typography: mat-typography-config(
+  $font-family: 'SEBSansSerif',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);

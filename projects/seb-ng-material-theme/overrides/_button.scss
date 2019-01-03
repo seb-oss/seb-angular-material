@@ -1,0 +1,95 @@
+body {
+    .mat-raised-button, .mat-fab, .mat-mini-fab {
+        &.mat-secondary {
+            color: $sebvi-color-darkblue1;
+                &:active, &:hover {
+                    background: $sebvi-color-blue;
+                    color: $sebvi-color-white;
+                }
+        }
+    }
+
+    .mat-raised-button {
+        border-radius: .25em;
+        padding: 0 1em;
+        border: 1px solid transparent;
+        &[color="secondary"] {
+            border-color: $sebvi-color-darkblue1;
+            &[disabled] {
+                border-color: $sebvi-color-grey7;
+                background-color: $sebvi-color-grey9;
+                color: $sebvi-color-grey6;
+                &:active, &:hover {
+                    background-color: $sebvi-color-grey9;
+                    color: $sebvi-color-grey6;
+                    border-color: $sebvi-color-grey7;
+                }
+            }
+        }
+    }
+
+    mat-button-toggle-group[color="primary"] {
+        .mat-button-toggle {
+            background-color: $sebvi-color-white;
+            color: $sebvi-color-darkblue1;
+            border: 1px solid $sebvi-color-blue;
+            &:not(:first-of-type) {
+                border-left: none; 
+            }
+            &[disabled] {
+                background-color: $sebvi-color-grey9;
+                color: $sebvi-color-grey7;
+                border: 1px solid $sebvi-color-grey7;
+            }
+            &.mat-button-toggle-checked {
+                background-color: $sebvi-color-darkblue1;
+                color: $sebvi-color-white;
+            }
+        }
+        &[disabled] {
+        .mat-button-toggle {
+            background-color: $sebvi-color-grey9;
+            color: $sebvi-color-grey7;
+            border: 1px solid $sebvi-color-grey7;
+            &.mat-button-toggle-checked {
+                background-color: $sebvi-color-darkblue1;
+                border: 1px solid $sebvi-color-darkblue1;
+                color: $sebvi-color-white;
+            }
+        }
+        }
+    }
+
+    mat-button-toggle-group[color="green"] {
+        .mat-button-toggle {
+            background-color: $sebvi-color-white;
+            color: $sebvi-color-darkgreen2;
+            border: 1px solid $sebvi-color-darkgreen2;
+            &:not(:first-of-type) {
+                border-left: none; 
+            }
+            &[disabled] {
+                background-color: $sebvi-color-grey9;
+                color: $sebvi-color-grey7;
+                border: 1px solid $sebvi-color-grey7;
+            }
+            &.mat-button-toggle-checked {
+                background-color: $sebvi-color-darkgreen2;
+                color: $sebvi-color-white;
+            }
+        }
+        &[disabled] {
+        .mat-button-toggle {
+            background-color: $sebvi-color-grey9;
+            color: $sebvi-color-grey7;
+            border: 1px solid $sebvi-color-grey7;
+            &.mat-button-toggle-checked {
+                background-color: $sebvi-color-darkgreen2;
+                border: 1px solid $sebvi-color-darkgreen2;
+                color: $sebvi-color-white;
+            }
+        }
+        }
+    }
+
+}
