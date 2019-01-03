@@ -11,7 +11,7 @@
     "theme:compile": "node-sass --output-style=compressed projects/seb-ng-material-theme/seb-mat-theme.scss projects/seb-ng-material-theme/seb-mat-theme.css",
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
     "theme:pack": "npm run theme:compile && npm run theme:docs",
-    "theme:release": "npm run theme:pack && cd projects/seb-ng-material-theme && semantic-release"
+    "theme:release": "cd projects/seb-ng-material-theme && semantic-release"
   },
   "private": true,
   "dependencies": {
