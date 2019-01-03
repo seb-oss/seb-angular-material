@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+/projects/seb-ng-material-theme/README.md
+/projects/seb-ng-material-theme/LICENSE.md
+/projects/seb-ng-material-theme/seb-mat-theme.css
 
 # dependencies
 /node_modules

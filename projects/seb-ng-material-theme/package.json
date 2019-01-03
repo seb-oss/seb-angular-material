@@ -1,5 +1,5 @@
 {
-  "name": "@sebgroup/seb-ng-material-theme",
+  "name": "@brch/seb-ng-material-theme",
   "version": "0.0.0-semantically-released",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sebgroup/seb-pictograms.git"
+    "url": "https://github.sebank.se/BranchChannel/seb-angular-material-theme"
   },
   "license": "Apache-2.0",
   "peerDependencies": {
