@@ -1,0 +1,62 @@
+@import '~@angular/material/theming';
+@import '_seb-mat-palettes';
+@import '_seb-mat-typography';
+// Plus imports for other components in your app.
+
+
+@function seb-mat-light-theme($baseColor, $accentColor: $baseColor, $warnColor: $sebvi-color-red) {
+  $primaryPallete: seb-mat-palette($baseColor);
+  $accentPallete: seb-mat-palette($accentColor);
+  $warnPallete: seb-mat-palette($warnColor);
+  $primary: mat-palette($primaryPallete);
+  $accent: mat-palette($accentPallete, A200, A100, A400);
+  $warn: mat-palette($warnPallete);
+  @return mat-light-theme($primary, $accent, $warn);
+}
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core($seb-typography);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+$seb-mat-light-darkblue1-theme: seb-mat-light-theme($sebvi-color-darkblue1);
+$seb-mat-light-green-theme: seb-mat-light-theme($sebvi-color-green);
+
+@include mat-core-theme($seb-mat-light-darkblue1-theme);
+@include mat-autocomplete-theme($seb-mat-light-darkblue1-theme);
+// @include mat-badge-theme($seb-mat-light-darkblue1-theme);
+// @include mat-bottom-sheet-theme($seb-mat-light-darkblue1-theme);
+@include mat-button-theme($seb-mat-light-darkblue1-theme);
+@include mat-button-toggle-theme($seb-mat-light-darkblue1-theme);
+@include mat-card-theme($seb-mat-light-darkblue1-theme);
+@include mat-checkbox-theme($seb-mat-light-darkblue1-theme);
+@include mat-chips-theme($seb-mat-light-darkblue1-theme);
+@include mat-table-theme($seb-mat-light-darkblue1-theme);
+@include mat-datepicker-theme($seb-mat-light-darkblue1-theme);
+@include mat-dialog-theme($seb-mat-light-darkblue1-theme);
+@include mat-divider-theme($seb-mat-light-darkblue1-theme);
+@include mat-expansion-panel-theme($seb-mat-light-darkblue1-theme);
+@include mat-form-field-theme($seb-mat-light-darkblue1-theme);
+@include mat-grid-list-theme($seb-mat-light-darkblue1-theme);
+@include mat-icon-theme($seb-mat-light-darkblue1-theme);
+@include mat-input-theme($seb-mat-light-darkblue1-theme);
+@include mat-list-theme($seb-mat-light-darkblue1-theme);
+@include mat-menu-theme($seb-mat-light-darkblue1-theme);
+@include mat-paginator-theme($seb-mat-light-darkblue1-theme);
+@include mat-progress-bar-theme($seb-mat-light-green-theme);
+@include mat-progress-spinner-theme($seb-mat-light-darkblue1-theme);
+@include mat-radio-theme($seb-mat-light-darkblue1-theme);
+@include mat-select-theme($seb-mat-light-darkblue1-theme);
+@include mat-sidenav-theme($seb-mat-light-darkblue1-theme);
+@include mat-slide-toggle-theme($seb-mat-light-darkblue1-theme);
+@include mat-slider-theme($seb-mat-light-darkblue1-theme);
+@include mat-stepper-theme($seb-mat-light-darkblue1-theme);
+@include mat-tabs-theme($seb-mat-light-darkblue1-theme);
+@include mat-toolbar-theme($seb-mat-light-darkblue1-theme);
+@include mat-tooltip-theme($seb-mat-light-darkblue1-theme);
+@include mat-snack-bar-theme($seb-mat-light-darkblue1-theme);
+
+@import '_overrides';
