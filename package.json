@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "theme:compile": "node-sass --output-style=compressed projects/seb-ng-material-theme/seb-mat-theme.scss projects/seb-ng-material-theme/seb-mat-theme.css",
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
-    "theme:pack": "npm run theme:compile && npm run theme:docs",
+    "theme:fonts": "copyfiles -f \"./node_modules/@sebdesignlibrary/visual-identity/src/fonts/*\" \"./projects/seb-ng-material-theme/assets/fonts\"",
+    "theme:pack": "npm run theme:compile && npm run theme:fonts && npm run theme:docs",
     "theme:release": "cd projects/seb-ng-material-theme && semantic-release"
   },
   "private": true,
