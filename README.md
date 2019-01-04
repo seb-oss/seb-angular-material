@@ -1,6 +1,36 @@
 # SebNgMaterial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+This is SEB theme for Angular Material components
+
+## How to use SEB Material
+
+* add npm dependency to your `package.json`: `npm i --save @brch/seb-ng-material-theme`
+* add assets to `angular.json`:
+  ```
+  "assets": [
+    {
+      "glob": "**/*",
+      "input": "node_modules/seb-ng-material/assets",
+      "output": "/assets"
+    },
+  ]
+  ```
+* in your top level style file (for ex. `styles.sass`), add SEB Material styles:
+  ```
+  @import "seb-ng-material/css/main.css";
+  ```
+* in your markup:
+  * body:
+  ```html
+  <body class="mat-body">...</body>
+  ```
+  * component, use Angular Material directives:
+  ```html
+  <button mat-raised-button color="primary" type="button"</button>
+  ```
+
+For more info on usage, consult Angular Material docs.
+
 
 ## Development server
 
