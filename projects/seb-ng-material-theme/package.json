@@ -12,7 +12,8 @@
   },
   "release": {
     "repositoryUrl": "https://github.sebank.se/BranchChannel/seb-angular-material-theme",
-    "githubUrl": "https://github.sebank.se"
+    "githubUrl": "https://github.sebank.se",
+    "githubApiPathPrefix": "/api/v3/"
   },
   "peerDependencies": {
     "@angular/material": "^7.2.0"
