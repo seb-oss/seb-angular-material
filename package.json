@@ -14,6 +14,10 @@
     "theme:pack": "npm run theme:compile && npm run theme:fonts && npm run theme:docs",
     "theme:release": "cd projects/seb-ng-material-theme && semantic-release"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.sebank.se/BranchChannel/seb-angular-material-theme"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.1.0",
