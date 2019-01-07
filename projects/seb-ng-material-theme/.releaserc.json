@@ -2,8 +2,8 @@
   "repositoryUrl": "https://github.sebank.se/BranchChannel/seb-angular-material-theme",
   "plugins": [
     ["@semantic-release/github", {
-      "githubUrl": "",
-      "githubApiPathPrefix": ""
+      "githubUrl": "https://github.sebank.se",
+      "githubApiPathPrefix": "api/v3/"
     }]
   ]
 }
