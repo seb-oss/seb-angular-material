@@ -3,15 +3,16 @@ import { CommonModule } from '@angular/common';
 import {
   MatButtonModule,
   MatButtonToggleModule,
-  MatProgressBarModule,
+  MatCardModule,
   MatCheckboxModule,
-  MatRadioModule,
   MatDatepickerModule,
-  MatSelectModule,
-  MatInputModule,
   MatFormFieldModule,
+  MatInputModule,
+  MatNativeDateModule,
+  MatProgressBarModule,
+  MatRadioModule,
+  MatSelectModule,
   MatSlideToggleModule,
-  MatNativeDateModule
 } from '@angular/material';
 
 @NgModule({
@@ -20,16 +21,16 @@ import {
     CommonModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatProgressBarModule,
+    MatCardModule,
     MatCheckboxModule,
-    MatRadioModule,
     MatDatepickerModule,
-    MatSelectModule,
-    MatInputModule,
     MatFormFieldModule,
-    MatSlideToggleModule,
+    MatInputModule,
     MatNativeDateModule,
-
+    MatProgressBarModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSlideToggleModule,
   ]
 })
 export class MaterialModule { }

@@ -1,0 +1,72 @@
+
+<app-markdown-viewer [path]="'readme/README.md'" ></app-markdown-viewer>
+
+<mat-card>
+  <mat-card-title>Buttons</mat-card-title>
+  <button mat-raised-button color="primary">Primary Button</button>
+  <button mat-raised-button>Basic</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button color="secondary">Secondary Button</button>
+  <button mat-raised-button color="secondary" disabled>Secondary Button</button>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Toggle buttons</mat-card-title>
+  <mat-button-toggle-group #group="matButtonToggleGroup" color="primary" value="item-2">
+    <mat-button-toggle value="item-1">
+      Item 1
+    </mat-button-toggle>
+    <mat-button-toggle value="item-2">
+      Item 2
+    </mat-button-toggle>
+    <mat-button-toggle value="item-3">
+      Item 3
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Progress bar</mat-card-title>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Checkbox</mat-card-title>
+  <mat-checkbox>Field label</mat-checkbox>
+  <mat-checkbox disabled="">Field label</mat-checkbox>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Datepicker</mat-card-title>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Radio button</mat-card-title>
+  <mat-radio-group>
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Text input</mat-card-title>
+  <mat-form-field>
+    <input type="text" matInput aria-label="Field label" placeholder="Input field">
+  </mat-form-field>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Dropdown</mat-card-title>
+  <mat-form-field>
+    <mat-select placeholder="Select">
+      <mat-option value="1">Option 1</mat-option>
+      <mat-option value="2">Option 2</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-card>
