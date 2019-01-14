@@ -31,11 +31,6 @@
                 "output": "/assets/fonts"
               },
               {
-                "input": "node_modules/@brch/layout",
-                "glob": "page-style.css",
-                "output": "."
-              },
-              {
                 "input": ".",
                 "glob": "README.md",
                 "output": "./readme"
@@ -43,7 +38,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/@brch/layout/style.css"
+              "src/layout/style.css"
             ],
             "scripts": []
           },
