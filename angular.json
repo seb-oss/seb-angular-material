@@ -27,7 +27,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "node_modules/@sebdesignlibrary/visual-identity/src/fonts",
+                "input": "projects/visual-identity/src/fonts",
                 "output": "/assets/fonts"
               }
             ],
