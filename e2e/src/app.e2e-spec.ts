@@ -7,8 +7,8 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to seb-ng-material!');
+    expect(page.getTitleText()).toEqual('SEB Angular Material Theme');
   });
 });
