@@ -1,0 +1,11 @@
+app-demo {
+  mat-card {
+    margin-bottom: 1em;
+  }
+  .mat-raised-button {
+    margin-bottom: 0.3em;
+  }
+  .mat-checkbox, .mat-raised-button, .mat-radio-button {
+    margin-right: 0.5em;
+  }
+}

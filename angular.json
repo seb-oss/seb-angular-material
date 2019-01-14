@@ -29,10 +29,16 @@
                 "glob": "**/*",
                 "input": "projects/visual-identity/src/fonts",
                 "output": "/assets/fonts"
+              },
+              {
+                "input": ".",
+                "glob": "README.md",
+                "output": "./readme"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/layout/style.css"
             ],
             "scripts": []
           },
@@ -88,7 +94,8 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@brch/layout/style.css"
             ],
             "scripts": [],
             "assets": [
@@ -140,5 +147,12 @@
       }
     }
   },
-  "defaultProject": "seb-ng-material"
+  "defaultProject": "seb-ng-material",
+  "schematics": {
+    "@schematics/angular:component": {
+      "viewEncapsulation": "None",
+      "prefix": "app",
+      "styleext": "scss"
+    }
+  }
 }
