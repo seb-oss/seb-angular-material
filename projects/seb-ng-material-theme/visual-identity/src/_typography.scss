@@ -1,0 +1,185 @@
+////
+/// Typhography mixins for Visual Identity
+/// @group Utilities
+/// @author Digital CX
+////
+
+@import "variables";
+@import "fonts/font-face-definitions";
+
+// These are the fonts and the style and weight variations they include
+$_seb_sans_serif: (
+  name: "SEBSansSerif",
+  weights: (
+    200: (
+      normal,
+      italic
+    ),
+    normal: (
+      normal,
+      italic
+    ),
+    500: (
+      normal,
+      italic
+    ),
+    bold: (
+      normal,
+      italic
+    )
+  )
+);
+
+@include sebvi-make-font-faces($_seb_sans_serif);
+
+@include _sebvi-exports("seb-font-family-placeholder-class") {
+  %sebvi-font-family {
+    font-family: $sebvi-font-seb-sans-serif;
+    // * { font-family: inherit; }
+  }
+}
+
+/// Body element defaults. Sets font-family and font size for all viewports
+/// @access public
+@mixin sebvi-typography-body() {
+  @extend %sebvi-font-family;
+  color: $sebvi-color-text;
+  line-height: 1.4;
+  @include media-context($sebvi-breakpoints) {
+    @include media(">mobile") {
+      font-size: map-get(map-get($sebvi-font-settings-body, "mobile"), "size");
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body, "mobile"),
+        "weight"
+      );
+      //line-height: map-get(map-get($sebvi-font-settings-body, 'mobile'), 'size') + sebvi-px-to-rem(4);
+    }
+    @include media(">tablet") {
+      font-size: map-get(map-get($sebvi-font-settings-body, "tablet"), "size");
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body, "tablet"),
+        "weight"
+      );
+      //line-height: map-get(map-get($sebvi-font-settings-body, 'tablet'), 'size') + sebvi-px-to-rem(4);
+    }
+    @include media(">desktop") {
+      font-size: map-get(map-get($sebvi-font-settings-body, "desktop"), "size");
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body, "desktop"),
+        "weight"
+      );
+      //line-height: map-get(map-get($sebvi-font-settings-body, 'desktop'), 'size') + sebvi-px-to-rem(4);
+    }
+  }
+}
+
+/// Output heading styles
+///
+/// @param {String} $level - Heading level. h1 - h6 and ´display´
+@mixin sebvi-typography-heading($level) {
+  $headings: (
+    "display": $sebvi-font-settings-h-display,
+    "h1": $sebvi-font-settings-h1,
+    "h2": $sebvi-font-settings-h2,
+    "h3": $sebvi-font-settings-h3,
+    "h4": $sebvi-font-settings-h4,
+    "h5": $sebvi-font-settings-h5,
+    "h6": $sebvi-font-settings-h6
+  );
+
+  margin: 0 0 sebvi-px-to-rem(8);
+
+  $use_heading: map-get($headings, $level);
+  @include media-context($sebvi-breakpoints) {
+    @include media(">mobile") {
+      font-size: map-get(map-get($use_heading, "mobile"), "size");
+      font-weight: map-get(map-get($use_heading, "mobile"), "weight");
+      line-height: map-get(map-get($use_heading, "mobile"), "size") +
+        sebvi-px-to-rem(8);
+    }
+    @include media(">tablet") {
+      font-size: map-get(map-get($use_heading, "tablet"), "size");
+      font-weight: map-get(map-get($use_heading, "tablet"), "weight");
+      line-height: map-get(map-get($use_heading, "tablet"), "size") +
+        sebvi-px-to-rem(8);
+    }
+    @include media(">desktop") {
+      font-size: map-get(map-get($use_heading, "desktop"), "size");
+      font-weight: map-get(map-get($use_heading, "desktop"), "weight");
+      line-height: map-get(map-get($use_heading, "desktop"), "size") +
+        sebvi-px-to-rem(8);
+    }
+  }
+}
+
+/// Small font styles
+/// @access public
+@mixin sebvi-typography-small-text() {
+  @include media-context($sebvi-breakpoints) {
+    @include media(">mobile") {
+      font-size: map-get(
+        map-get($sebvi-font-settings-body-small, "mobile"),
+        "size"
+      );
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body-small, "mobile"),
+        "weight"
+      );
+    }
+    @include media(">tablet") {
+      font-size: map-get(
+        map-get($sebvi-font-settings-body-small, "tablet"),
+        "size"
+      );
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body-small, "tablet"),
+        "weight"
+      );
+    }
+    @include media(">desktop") {
+      font-size: map-get(
+        map-get($sebvi-font-settings-body-small, "desktop"),
+        "size"
+      );
+      font-weight: map-get(
+        map-get($sebvi-font-settings-body-small, "desktop"),
+        "weight"
+      );
+    }
+  }
+}
+
+/// Link styles
+/// @access public
+@mixin sebvi-typography-links() {
+  font-weight: 500;
+  color: $sebvi-color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  /* visited link */
+  &:visited {
+    color: $sebvi-color-link;
+  }
+}
+
+/// Paragraph styles
+/// @access public
+@mixin sebvi-typography-paragraph() {
+  margin: 0 0 sebvi-px-to-rem(16);
+}
+
+/// UL styles
+/// @access public
+@mixin sebvi-typography-list() {
+  @include sebvi-typography-paragraph();
+  padding: 0 sebvi-px-to-rem(16);
+
+  ul > &:last-child,
+  ol > &:last-child {
+    margin: 0;
+  }
+}
