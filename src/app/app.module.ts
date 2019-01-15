@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.component';
 import { TabsDemoComponent } from './components/tabs-demo/tabs-demo.component';
 import { InputTextareaDemoComponent } from './components/input-textarea-demo/input-textarea-demo.component';
+import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { InputTextareaDemoComponent } from './components/input-textarea-demo/inp
     TooltipDemoComponent,
     TabsDemoComponent,
     InputTextareaDemoComponent,
+    SnackbarDemoComponent,
   ],
   imports: [
     BrowserModule,
