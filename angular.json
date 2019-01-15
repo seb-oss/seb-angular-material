@@ -90,8 +90,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss",
-              "node_modules/@brch/layout/style.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [

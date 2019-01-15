@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TabsDemoComponent } from './tabs-demo.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('TabsDemoComponent', () => {
   let component: TabsDemoComponent;
@@ -8,7 +9,8 @@ describe('TabsDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ TabsDemoComponent ]
+      declarations: [ TabsDemoComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents().
     then(done);

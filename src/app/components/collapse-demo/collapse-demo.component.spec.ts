@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CollapseDemoComponent } from './collapse-demo.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('CollapseDemoComponent', () => {
   let component: CollapseDemoComponent;
@@ -8,10 +9,11 @@ describe('CollapseDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ CollapseDemoComponent ]
+      declarations: [CollapseDemoComponent],
+      schemas: [NO_ERRORS_SCHEMA],
     })
-    .compileComponents()
-    .then(done);
+      .compileComponents()
+      .then(done);
   });
 
   beforeEach(() => {
