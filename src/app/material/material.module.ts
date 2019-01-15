@@ -13,6 +13,7 @@ import {
   MatRadioModule,
   MatSelectModule,
   MatTooltipModule,
+  MatTabsModule,
   MatSlideToggleModule,
 } from '@angular/material';
 
@@ -28,6 +29,7 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatTooltipModule,
+    MatTabsModule,
     MatNativeDateModule,
     MatProgressBarModule,
     MatRadioModule,
