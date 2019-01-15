@@ -14,6 +14,7 @@ import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.com
 import { TabsDemoComponent } from './components/tabs-demo/tabs-demo.component';
 import { InputTextareaDemoComponent } from './components/input-textarea-demo/input-textarea-demo.component';
 import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.component';
+import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.
     TabsDemoComponent,
     InputTextareaDemoComponent,
     SnackbarDemoComponent,
+    CollapseDemoComponent,
   ],
   imports: [
     BrowserModule,
