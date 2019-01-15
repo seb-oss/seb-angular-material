@@ -1,8 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { MarkdownViewerComponent } from './markdown-viewer.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { BrchUtilsTestModule } from '@brch/ng-utils/testing';
 
 describe('MarkdownViewerComponent', () => {
   let component: MarkdownViewerComponent;
@@ -12,7 +11,7 @@ describe('MarkdownViewerComponent', () => {
     TestBed.configureTestingModule({
       declarations: [MarkdownViewerComponent],
       schemas: [NO_ERRORS_SCHEMA],
-      imports: [HttpClientTestingModule, BrchUtilsTestModule]
+      imports: [HttpClientTestingModule]
     })
       .compileComponents()
       .then(done);
