@@ -14,6 +14,7 @@ import {
   MatSelectModule,
   MatTooltipModule,
   MatTabsModule,
+  MatSnackBarModule,
   MatSlideToggleModule,
 } from '@angular/material';
 
@@ -29,6 +30,7 @@ import {
     MatFormFieldModule,
     MatInputModule,
     MatTooltipModule,
+    MatSnackBarModule,
     MatTabsModule,
     MatNativeDateModule,
     MatProgressBarModule,
