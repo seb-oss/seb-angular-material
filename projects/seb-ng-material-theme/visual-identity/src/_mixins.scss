@@ -1,0 +1,73 @@
+////
+/// These are mixins used in the Vanilla Pattern Library
+/// @group Mixins
+/// @author Digital CX
+////
+
+
+$sebvi-imported-modules: () !default;
+/// Module export mixin
+/// This mixin helps making sure a module is imported once and only once.
+/// @access private
+/// @param {String} $name - Name of exported module
+/// @param {Bool} $warn [true] - Warn when module has been already imported
+/// @require $imported-modules
+@mixin _sebvi-exports($name, $warn: false) {
+  @if (index($sebvi-imported-modules, $name) == null) {
+    $sebvi-imported-modules: append($sebvi-imported-modules, $name) !global;
+    @content;
+  } @else if $warn == true {
+    @warn "Module `#{$name}` has already been imported.";
+  }
+}
+
+/// Adds an icon to the element
+/// 
+/// @access public
+/// @param {String} $glyph - Icon glyph to use [Font Awesome 5]
+/// @param $rotation rotation in degrees
+/// @param $color Color of the icon. Defaults to $sebvi-color-component-normal
+/// @param $coord-position Should be a map with any combination of the keys 'top', 'right', 'bottom' or 'left'. If this is used, the element will become a block with absolute positioning
+// @mixin sebvi-icon(
+//   $glyph,
+//   $rotation: false,
+//   $color: $sebvi-color-component-normal,
+//   $coord-position: false) {
+
+//   $_icon-space: $sebvi-base-size * 3;
+  
+//   font-family: 'Font Awesome 5 Pro';
+//   content: $glyph;
+//   color: $sebvi-color-component-normal;
+
+//   height: $_icon-space;
+//   width: $_icon-space;
+//   text-align: center;
+
+//   @if ($rotation != false) {
+//     @include sebvi-icon-rotate($rotation);
+//   }
+
+//   @if ($_coord-position != false) {
+
+//     display: block;
+//     position: absolute;
+    
+//     @each $pos, $coord in $_coord-position {
+//       #{$pos}: $coord;
+//     }
+    
+//   } @else {
+//     display: inline-block;
+//   }
+// }
+
+/// Module export mixin
+/// This mixin helps making sure a module is imported once and only once.
+/// @access public
+/// @param $rotation rotation in degrees
+/// @require seb-icon
+// @mixin sebvi-icon-rotate($rotation) {
+//   transform: rotate(#{$rotation + 'deg'});
+//   transition: transform 250ms
+// }

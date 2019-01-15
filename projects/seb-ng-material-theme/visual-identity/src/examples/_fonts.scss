@@ -1,0 +1,28 @@
+@import '../typography';
+@import '../colors';
+
+.seb-font-example {
+
+  margin-bottom: 3rem;
+
+  &.seb-sans-serif-light {
+    font-family: $sebvi-font-seb-sans-serif;
+    font-weight: 200;
+  }
+  &.seb-sans-serif-regular {
+    font-family: $sebvi-font-seb-sans-serif;
+    font-weight: normal;
+  }
+  &.seb-sans-serif-medium {
+    font-family: $sebvi-font-seb-sans-serif;
+    font-weight: 500;
+  }
+  &.seb-sans-serif-bold {
+    font-family: $sebvi-font-seb-sans-serif;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-weight: inherit;
+  }
+}

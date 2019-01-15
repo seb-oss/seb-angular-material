@@ -3,12 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { DemoComponent } from './components/demo/demo.component';
 
 const routes: Routes = [
-  { path: '**', redirectTo: 'demo' },
-  { path: 'demo', component: DemoComponent }
+  { path: '', component: DemoComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
