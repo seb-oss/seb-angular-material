@@ -26,11 +26,6 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob": "**/*",
-                "input": "node_modules/@sebdesignlibrary/visual-identity/src/fonts",
-                "output": "/assets/fonts"
-              },
-              {
                 "input": ".",
                 "glob": "README.md",
                 "output": "./readme"
@@ -38,7 +33,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/layout/style.css"
+              "src/layout/style.css",
+              "projects/seb-ng-material-theme/seb-mat-theme.scss"
             ],
             "scripts": []
           },
