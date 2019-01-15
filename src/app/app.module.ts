@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DemoComponent } from './components/demo/demo.component';
 import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-viewer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.component';
 import { TabsDemoComponent } from './components/tabs-demo/tabs-demo.component';
 import { InputTextareaDemoComponent } from './components/input-textarea-demo/input-textarea-demo.component';
 
@@ -20,6 +21,7 @@ import { InputTextareaDemoComponent } from './components/input-textarea-demo/inp
     HeaderComponent,
     DemoComponent,
     MarkdownViewerComponent,
+    TooltipDemoComponent,
     TabsDemoComponent,
     InputTextareaDemoComponent,
   ],
