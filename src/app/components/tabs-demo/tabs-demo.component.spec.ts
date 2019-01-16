@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TabsDemoComponent } from './tabs-demo.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { MaterialModule } from 'src/app/material/material.module';
 
 describe('TabsDemoComponent', () => {
   let component: TabsDemoComponent;
@@ -9,11 +8,11 @@ describe('TabsDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ TabsDemoComponent ],
-      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [TabsDemoComponent],
+      imports: [MaterialModule],
     })
-    .compileComponents().
-    then(done);
+      .compileComponents().
+      then(done);
   });
 
   beforeEach(() => {

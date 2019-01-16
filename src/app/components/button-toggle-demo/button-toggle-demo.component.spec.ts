@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ButtonToggleDemoComponent } from './button-toggle-demo.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 describe('ButtonToggleDemoComponent', () => {
   let component: ButtonToggleDemoComponent;
@@ -7,7 +8,8 @@ describe('ButtonToggleDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ButtonToggleDemoComponent]
+      declarations: [ButtonToggleDemoComponent],
+      imports: [MaterialModule]
     })
       .compileComponents()
       .then(done);
