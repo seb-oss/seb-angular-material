@@ -16,6 +16,7 @@ import { InputTextareaDemoComponent } from './components/input-textarea-demo/inp
 import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.component';
 import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 import { ButtonDemoComponent } from './components/button-demo/button-demo.component';
+import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ButtonDemoComponent } from './components/button-demo/button-demo.compon
     SnackbarDemoComponent,
     CollapseDemoComponent,
     ButtonDemoComponent,
+    ButtonToggleDemoComponent,
   ],
   imports: [
     BrowserModule,
