@@ -8,12 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "protractor e2e/protractor.conf.js",
-    "e2e:update": "webdriver-manager update --chrome --proxy http://gia.sebank.se:8080 --ignore_ssl",
+    "e2e:update": "webdriver-manager update --chrome",
     "theme:compile": "node-sass --output-style=compressed projects/seb-ng-material-theme/seb-mat-theme.scss projects/seb-ng-material-theme/seb-mat-theme.css",
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
-    "theme:fonts": "copyfiles -f \"./projects/visual-identity/src/fonts/*\" \"./projects/seb-ng-material-theme/assets/fonts\"",
-    "theme:pack": "npm run theme:compile && npm run theme:fonts && npm run theme:docs",
-    "theme:release": "cd projects/seb-ng-material-theme && branch-ng-tools publish"
+    "theme:pack": "npm run theme:compile && npm run theme:docs",
+    "travis-deploy-once": "travis-deploy-once --pro",
+    "semantic-release": "cd projects/seb-pictograms && semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +52,8 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
+    "semantic-release": "^15.13.3",
+    "travis-deploy-once": "^5.0.11",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"
