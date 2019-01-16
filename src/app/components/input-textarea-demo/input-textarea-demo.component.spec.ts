@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { InputTextareaDemoComponent } from './input-textarea-demo.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('InputTextareaDemoComponent', () => {
   let component: InputTextareaDemoComponent;
@@ -8,7 +8,8 @@ describe('InputTextareaDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ InputTextareaDemoComponent ]
+      declarations: [ InputTextareaDemoComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents()
     .then(done);

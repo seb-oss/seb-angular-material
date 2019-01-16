@@ -1,14 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SnackbarDemoComponent } from './snackbar-demo.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 describe('SnackbarDemoComponent', () => {
   let component: SnackbarDemoComponent;
   let fixture: ComponentFixture<SnackbarDemoComponent>;
 
+  const snackbarStub = {
+    open: () => null
+  };
+
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ SnackbarDemoComponent ]
+      declarations: [ SnackbarDemoComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
+      providers: [ { provide: MatSnackBar, useValue: snackbarStub },]
     })
     .compileComponents()
     .then(done);
