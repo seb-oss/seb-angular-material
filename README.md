@@ -1,4 +1,4 @@
-# @brch/seb-ng-material-theme
+# @sebgroup/seb-angular-material-theme
 
 This is SEB theme for [Angular Material components](https://material.angular.io)
 
@@ -6,19 +6,10 @@ This is SEB theme for [Angular Material components](https://material.angular.io)
 
 * add npm dependency for Angular Material: `npm i --save @angular/material`
 * add npm dependency for SEB theme: `npm i --save @brch/seb-ng-material-theme`
-* add assets to `angular.json`:
-  ```
-  "assets": [
-    {
-      "glob": "**/*",
-      "input": "node_modules/@brch/seb-ng-material-theme/assets",
-      "output": "/assets"
-    },
-  ]
-  ```
+
 * in your top level style file (for ex. `styles.sass`), add SEB Material styles:
   ```
-  @import "@brch/seb-ng-material-theme/css/main.css";
+  @import "@sebgroup/seb-angular-material-theme/seb-mat-theme.css";
   ```
 * in your markup body:
   ```html

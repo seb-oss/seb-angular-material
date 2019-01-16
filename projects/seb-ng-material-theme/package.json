@@ -1,16 +1,16 @@
 {
-  "name": "@brch/seb-ng-material-theme",
-  "version": "0.0.1",
-  "license": "Apache-2.0",
+  "name": "@sebgroup/seb-angular-material-theme",
+  "version": "0.0.0-semantically-released",
   "publishConfig": {
-    "registry": "https://repo.sebank.se/artifactory/api/npm/seb-npm/",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.sebank.se/BranchChannel/seb-angular-material-theme"
+    "url": "https://github.com/sebgroup/seb-angular-material"
   },
   "peerDependencies": {
     "@angular/material": "^7.2.0"
-  }
+  },
+  "license": "Apache-2.0"
 }
