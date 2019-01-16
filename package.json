@@ -13,7 +13,7 @@
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
     "theme:pack": "npm run theme:compile && npm run theme:docs",
     "travis-deploy-once": "travis-deploy-once --pro",
-    "semantic-release": "cd projects/seb-pictograms && semantic-release"
+    "semantic-release": "cd projects/seb-ng-material-theme && semantic-release"
   },
   "private": true,
   "dependencies": {
