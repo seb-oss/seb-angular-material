@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TooltipDemoComponent } from './tooltip-demo.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('TooltipDemoComponent', () => {
   let component: TooltipDemoComponent;
@@ -8,7 +9,8 @@ describe('TooltipDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ TooltipDemoComponent ]
+      declarations: [ TooltipDemoComponent ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents()
     .then(done);
