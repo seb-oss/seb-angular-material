@@ -1,14 +1,14 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CollapseDemoComponent } from './collapse-demo.component';
+import { ButtonToggleDemoComponent } from './button-toggle-demo.component';
 import { MaterialModule } from 'src/app/material/material.module';
 
-describe('CollapseDemoComponent', () => {
-  let component: CollapseDemoComponent;
-  let fixture: ComponentFixture<CollapseDemoComponent>;
+describe('ButtonToggleDemoComponent', () => {
+  let component: ButtonToggleDemoComponent;
+  let fixture: ComponentFixture<ButtonToggleDemoComponent>;
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [CollapseDemoComponent],
+      declarations: [ButtonToggleDemoComponent],
       imports: [MaterialModule]
     })
       .compileComponents()
@@ -16,7 +16,7 @@ describe('CollapseDemoComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CollapseDemoComponent);
+    fixture = TestBed.createComponent(ButtonToggleDemoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

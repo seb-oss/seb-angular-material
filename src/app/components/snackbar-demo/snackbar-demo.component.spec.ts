@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SnackbarDemoComponent } from './snackbar-demo.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
+import { MaterialModule } from 'src/app/material/material.module';
 
 describe('SnackbarDemoComponent', () => {
   let component: SnackbarDemoComponent;
@@ -14,12 +13,12 @@ describe('SnackbarDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ SnackbarDemoComponent ],
-      schemas: [NO_ERRORS_SCHEMA],
-      providers: [ { provide: MatSnackBar, useValue: snackbarStub },]
+      declarations: [SnackbarDemoComponent],
+      providers: [{ provide: MatSnackBar, useValue: snackbarStub },],
+      imports: [MaterialModule],
     })
-    .compileComponents()
-    .then(done);
+      .compileComponents()
+      .then(done);
   });
 
   beforeEach(() => {

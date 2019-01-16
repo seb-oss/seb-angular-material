@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { InputTextareaDemoComponent } from './input-textarea-demo.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { MaterialModule } from 'src/app/material/material.module';
 
 describe('InputTextareaDemoComponent', () => {
   let component: InputTextareaDemoComponent;
@@ -9,7 +9,7 @@ describe('InputTextareaDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [ InputTextareaDemoComponent ],
-      schemas: [NO_ERRORS_SCHEMA],
+      imports: [MaterialModule]
     })
     .compileComponents()
     .then(done);
