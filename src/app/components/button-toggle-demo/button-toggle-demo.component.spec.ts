@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ButtonToggleDemoComponent } from './button-toggle-demo.component';
-import { MaterialModule } from 'src/app/material/material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('ButtonToggleDemoComponent', () => {
   let component: ButtonToggleDemoComponent;
@@ -9,7 +9,7 @@ describe('ButtonToggleDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [ButtonToggleDemoComponent],
-      imports: [MaterialModule]
+      schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents()
       .then(done);

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CollapseDemoComponent } from './collapse-demo.component';
-import { MaterialModule } from 'src/app/material/material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('CollapseDemoComponent', () => {
   let component: CollapseDemoComponent;
@@ -9,7 +9,7 @@ describe('CollapseDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [CollapseDemoComponent],
-      imports: [MaterialModule]
+      schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents()
       .then(done);
