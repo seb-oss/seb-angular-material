@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TooltipDemoComponent } from './tooltip-demo.component';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { MaterialModule } from 'src/app/material/material.module';
 
 describe('TooltipDemoComponent', () => {
   let component: TooltipDemoComponent;
@@ -9,11 +8,11 @@ describe('TooltipDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [ TooltipDemoComponent ],
-      schemas: [NO_ERRORS_SCHEMA],
+      declarations: [TooltipDemoComponent],
+      imports: [MaterialModule]
     })
-    .compileComponents()
-    .then(done);
+      .compileComponents()
+      .then(done);
   });
 
   beforeEach(() => {
