@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TabsDemoComponent } from './tabs-demo.component';
-import { MaterialModule } from 'src/app/material/material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('TabsDemoComponent', () => {
   let component: TabsDemoComponent;
@@ -9,7 +9,7 @@ describe('TabsDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [TabsDemoComponent],
-      imports: [MaterialModule],
+      schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents().
       then(done);

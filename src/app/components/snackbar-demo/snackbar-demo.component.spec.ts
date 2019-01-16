@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SnackbarDemoComponent } from './snackbar-demo.component';
 import { MatSnackBar } from '@angular/material';
-import { MaterialModule } from 'src/app/material/material.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('SnackbarDemoComponent', () => {
   let component: SnackbarDemoComponent;
@@ -15,7 +15,7 @@ describe('SnackbarDemoComponent', () => {
     TestBed.configureTestingModule({
       declarations: [SnackbarDemoComponent],
       providers: [{ provide: MatSnackBar, useValue: snackbarStub },],
-      imports: [MaterialModule],
+      schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents()
       .then(done);
