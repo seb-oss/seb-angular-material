@@ -12,6 +12,7 @@
     "theme:compile": "node-sass --output-style=compressed projects/seb-ng-material-theme/seb-mat-theme.scss projects/seb-ng-material-theme/seb-mat-theme.css",
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
     "theme:pack": "npm run theme:compile && npm run theme:docs",
+    "github-pages:deploy": "npx angular-cli-ghpages --dir=dist/seb-ng-material --repo=https://GH_TOKEN@github.com/sebgroup/seb-angular-material.git --no-silent",
     "travis-deploy-once": "travis-deploy-once --pro",
     "semantic-release": "cd projects/seb-ng-material-theme && semantic-release"
   },
@@ -41,6 +42,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "angular-cli-ghpages": "^0.5.3",
     "codelyzer": "~4.5.0",
     "copyfiles": "^2.1.0",
     "jasmine-core": "~2.99.1",
