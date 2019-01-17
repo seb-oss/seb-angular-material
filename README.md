@@ -18,13 +18,13 @@ To install using NPM use this command:
 
 * in your top level style file (for ex. `styles.sass`), add SEB Material styles (lib contains both seb-mat-theme.css and seb-mat-theme.scss files):
   ```
-  @import "./node_modules/@sebgroup/seb-angular-material-theme/seb-mat-theme.css";
+  @import "node_modules/@sebgroup/seb-angular-material-theme/seb-mat-theme.css";
   ```
-  or add 
+  or add it in angular.json
   ```
   "styles": [
     ..,
-    "./node_modules/@sebgroup/seb-ng-material-theme/seb-mat-theme.css"
+    "node_modules/@sebgroup/seb-angular-material-theme/seb-mat-theme.css"
   ],
   ```
 * in your markup body:
