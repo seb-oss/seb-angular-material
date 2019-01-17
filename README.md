@@ -1,15 +1,31 @@
-# @sebgroup/seb-angular-material-theme
+# SEB Angular Material
 
 This is SEB theme for [Angular Material components](https://material.angular.io)
 
-## How to use SEB Material
+[Demo app](https://sebgroup.github.io/seb-angular-material/)
+
+## Installation
 
 * add npm dependency for Angular Material: `npm i --save @angular/material`
-* add npm dependency for SEB theme: `npm i --save @brch/seb-ng-material-theme`
 
-* in your top level style file (for ex. `styles.sass`), add SEB Material styles:
+To install using NPM use this command:
+
+```bash
+`npm i --save @sebgroup/seb-angular-material-theme`
+```
+
+## Usage
+
+* in your top level style file (for ex. `styles.sass`), add SEB Material styles (lib contains both seb-mat-theme.css and seb-mat-theme.scss files):
   ```
-  @import "@sebgroup/seb-angular-material-theme/seb-mat-theme.css";
+  @import "./node_modules/@sebgroup/seb-angular-material-theme/seb-mat-theme.css";
+  ```
+  or add 
+  ```
+  "styles": [
+    ..,
+    "./node_modules/@sebgroup/seb-ng-material-theme/seb-mat-theme.css"
+  ],
   ```
 * in your markup body:
   ```html
@@ -21,3 +37,13 @@ This is SEB theme for [Angular Material components](https://material.angular.io)
   ```
 
 For more info on usage and examples, consult [Angular Material docs](https://material.angular.io).
+
+## Development server
+
+Angular demo application is available.
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Releasing
+
+The library is released via [semantic-release](https://www.npmjs.com/package/semantic-release).
