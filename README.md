@@ -6,7 +6,7 @@ This is SEB theme for [Angular Material components](https://material.angular.io)
 
 ## Installation
 
-* add npm dependency for Angular Material: `npm i --save @angular/material`
+* add npm dependency for Angular Material: `npm install --save @angular/material @angular/cdk @angular/animations`
 
 To install using NPM use this command:
 
