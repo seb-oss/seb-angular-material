@@ -33,7 +33,7 @@ To install using NPM use this command:
   ```
 * in your components, use Angular Material directives:
   ```html
-  <button mat-raised-button color="primary" type="button"</button>
+  <button mat-raised-button color="primary" type="button"></button>
   ```
 
 For more info on usage and examples, consult [Angular Material docs](https://material.angular.io).
