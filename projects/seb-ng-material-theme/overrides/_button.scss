@@ -33,40 +33,34 @@ body {
     padding: 0 1em;
     border: 1px solid $sebvi-color-white;
     color: $sebvi-color-white;
-    &[color="basic"] {
+      &:active, &:hover {
+        background-color: $sebvi-color-white;
+        color: $sebvi-color-grey2;
         border-color: $sebvi-color-white;
-        &:active, &:hover {
-          background-color: $sebvi-color-white;
-          color: $sebvi-color-grey2;
-          border-color: $sebvi-color-white;
       }
-        &[disabled] {
-            border-color: $sebvi-color-grey8;
-            background-color: transparent;
-            color: $sebvi-color-grey8;
-        }
-    }
-}
+      &[disabled] {
+        border-color: $sebvi-color-grey8;
+        background-color: transparent;
+        color: $sebvi-color-grey8;
+      }
+  }
 
-.mat-stroked-button[color="dark"] {
-  border-radius: .25em;
-  padding: 0 1em;
-  color: $sebvi-color-grey2;
-  border: 1px solid $sebvi-color-grey2;
-  &[color="basic"] {
-      border-color: $sebvi-color-grey2;
+  .mat-stroked-button[color="dark"] {
+    border-radius: .25em;
+    padding: 0 1em;
+    color: $sebvi-color-grey2;
+    border: 1px solid $sebvi-color-grey2;
       &:active, &:hover {
         background-color: $sebvi-color-grey2;
         color: $sebvi-color-white;
         border-color: $sebvi-color-grey2;
-    }
-      &[disabled] {
-          border-color: $sebvi-color-grey7;
-          background-color: transparent;
-          color: $sebvi-color-grey7;
       }
+      &[disabled] {
+        border-color: $sebvi-color-grey7;
+        background-color: transparent;
+        color: $sebvi-color-grey7;
+    }
   }
-}
 
   mat-button-toggle-group[color="primary"] {
       .mat-button-toggle {
