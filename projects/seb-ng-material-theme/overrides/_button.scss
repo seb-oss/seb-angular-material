@@ -28,7 +28,7 @@ body {
       }
   }
 
-  .mat-stroked-button.light-button {
+  .mat-stroked-button[color="light"] {
     border-radius: .25em;
     padding: 0 1em;
     border: 1px solid $sebvi-color-white;
