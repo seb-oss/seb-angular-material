@@ -48,7 +48,7 @@ body {
     }
 }
 
-.mat-stroked-button.dark-button {
+.mat-stroked-button[color="dark"] {
   border-radius: .25em;
   padding: 0 1em;
   color: $sebvi-color-grey2;
