@@ -17,6 +17,7 @@ import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.
 import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 import { ButtonDemoComponent } from './components/button-demo/button-demo.component';
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ButtonToggleDemoComponent } from './components/button-toggle-demo/butto
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
   ],
