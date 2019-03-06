@@ -10,8 +10,8 @@
       <mat-hint>Hint</mat-hint>
     </mat-form-field>
     <form class="example-form" [formGroup]="exampleForm">
-      <mat-label>Outline form field</mat-label><br>
       <mat-form-field appearance="outline">
+        <mat-label>Outline form field</mat-label>
         <input matInput placeholder="Email" formControlName="exampleField">
         <mat-hint>Errors appear instantly!</mat-hint>
         <mat-error *ngIf="exampleForm.get('exampleField').hasError('required')">

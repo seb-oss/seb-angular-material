@@ -1,28 +1,27 @@
 body {
 
-  input {
-    height: 44px;
+  .mat-form-field-appearance-outline{
+    .mat-form-field-flex{
+      padding-left: 16px;
+    }
   }
 
-  .mat-form-field-infix{
-    margin: 0;
-    border: 0;
-    padding: 0 !important;
-  }
-
-  .mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
-    padding: 0;
-  }
-
-  .mat-form-field-flex {
-    padding-left: 16px;
-  }
-  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
-    .mat-form-field-outline-gap, .mat-form-field-outline-end, .mat-form-field-outline-start{
-      border-color: $sebvi-color-grey7;
-      border-width: 1px;
-      border-bottom-color: $sebvi-color-darkred1;
-      border-bottom-width: 2px;
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+   {
+     .mat-form-field-outline-thick {
+        .mat-form-field-outline-gap, .mat-form-field-outline-end, .mat-form-field-outline-start{
+          border-color: $sebvi-color-grey7;
+          border-width: 1px;
+          border-bottom-color: $sebvi-color-darkred1;
+          border-bottom-width: 2px;
+      }
+    }
+    &.mat-focused {
+      .mat-form-field-outline-thick {
+        .mat-form-field-outline-gap {
+          border-top-width: 0;
+        }
+      }
     }
   }
 }
