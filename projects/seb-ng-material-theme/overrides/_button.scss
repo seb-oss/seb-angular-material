@@ -1,4 +1,9 @@
 body {
+
+  button, .mat-select , .mat-button-toggle-group {
+    height: 44px;
+  }
+
   .mat-raised-button, .mat-fab, .mat-mini-fab {
       &.mat-secondary {
           color: $sebvi-color-darkblue1;
