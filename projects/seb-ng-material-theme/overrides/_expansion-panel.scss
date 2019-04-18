@@ -1,0 +1,42 @@
+
+
+mat-expansion-panel:not(.no-seb-style) {
+    mat-expansion-panel-header {
+        position: relative;
+
+        &::after {
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            content: '';
+            display: flex;
+            position: absolute;
+            left: 0.8em;
+            top: 20px;
+            padding: 3px;
+            transform: rotate(-45deg);
+            transition: top 5s;
+            transition: transform 0.4s;
+            vertical-align: middle;
+            color: $sebvi-color-blue;
+        }
+
+        &.mat-expanded {
+            border-left: 3px solid $sebvi-color-green;
+            border-bottom-left-radius: 0px;
+
+            &::after {
+                top: 28px;
+                transform: rotate(45deg);
+            }
+        }
+
+        .mat-expansion-panel-header-title {
+            padding-left: 1.5em;
+        }
+
+        .mat-expansion-indicator {
+            display: none;
+        }
+
+    }
+}
