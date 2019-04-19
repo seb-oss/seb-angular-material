@@ -6,6 +6,7 @@ import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.
 import { TabsDemoComponent } from './components/tabs-demo/tabs-demo.component';
 import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.component';
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
+import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonDemoComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'snackbar', component: SnackbarDemoComponent },
   { path: 'tabs', component: TabsDemoComponent },
   { path: 'tooltip', component: TooltipDemoComponent },
+  { path: 'expansionPanel', component: CollapseDemoComponent },
 ];
 
 @NgModule({
