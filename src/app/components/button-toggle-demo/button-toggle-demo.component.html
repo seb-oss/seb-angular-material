@@ -3,7 +3,9 @@
     <mat-card-title>Button toggle</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <mat-button-toggle-group color="primary" value="item-2">
+    <mat-slide-toggle [(ngModel)]="isDisabled">Disabled</mat-slide-toggle>
+    <br />
+    <mat-button-toggle-group disabled="{{isDisabled}}" color="primary" value="item-2">
       <mat-button-toggle value="item-1">
         Item 1
       </mat-button-toggle>

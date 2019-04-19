@@ -1,8 +1,27 @@
 <app-header></app-header>
-<div class="view" >
+<div class="view">
   <div class="brch-container">
     <main>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h4>README</h4>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-markdown-viewer [path]="'readme/README.md'"></app-markdown-viewer>
+      </mat-expansion-panel>
+      <br />
+      <mat-chip-list>
+        <mat-chip [routerLink]="'buttons'">Buttons</mat-chip>
+        <mat-chip [routerLink]="'buttonToggle'">Toggle Buttons</mat-chip>
+        <mat-chip [routerLink]="'inputs'">Inputs</mat-chip>
+        <mat-chip [routerLink]="'snackbar'">Snackbar</mat-chip>
+        <mat-chip [routerLink]="'tabs'">Tabs</mat-chip>
+        <mat-chip [routerLink]="'tooltip'">Tooltip</mat-chip>
+      </mat-chip-list>
+      <br />
       <router-outlet></router-outlet>
+      <br />
     </main>
   </div>
 </div>
