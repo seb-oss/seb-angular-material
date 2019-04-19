@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ButtonToggleDemoComponent implements OnInit {
 
+  isDisabled = false;
+
   constructor() { }
 
   ngOnInit() {

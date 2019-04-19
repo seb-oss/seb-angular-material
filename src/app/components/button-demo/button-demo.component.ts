@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ButtonDemoComponent implements OnInit {
 
+  selectedView = 'Buttons';
+
   constructor() { }
 
   ngOnInit() {
