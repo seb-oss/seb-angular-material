@@ -1,6 +1,35 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Text input</mat-card-title>
+    <mat-card-title>SEB Style form</mat-card-title>
+    <mat-card-subtitle>With &lt;mat-form-field appearance=&quot;outline&quot;&gt;
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <strong>Name</strong>
+    </div>
+    <mat-form-field appearance="outline">
+      <input type="text" matInput>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <form class="example-form" [formGroup]="exampleForm">
+      <div>
+        <strong>Email</strong>
+      </div>
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="Email" formControlName="exampleField">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="exampleForm.get('exampleField').hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Other examples:</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <mat-form-field>
