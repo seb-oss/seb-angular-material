@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { DemoComponent } from './components/demo/demo.component';
 import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-viewer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.component';
@@ -17,14 +16,13 @@ import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.
 import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 import { ButtonDemoComponent } from './components/button-demo/button-demo.component';
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    DemoComponent,
     MarkdownViewerComponent,
     TooltipDemoComponent,
     TabsDemoComponent,
@@ -41,6 +39,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
