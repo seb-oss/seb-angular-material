@@ -29,7 +29,7 @@ To install using NPM use this command:
   ```
 * in your markup body:
   ```html
-  <body class="mat-body">...</body>
+  <body class="mat-body">...</body> 
   ```
 * in your components, use Angular Material directives:
   ```html
