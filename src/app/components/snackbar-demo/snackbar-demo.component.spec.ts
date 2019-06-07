@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SnackbarDemoComponent } from './snackbar-demo.component';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('SnackbarDemoComponent', () => {
