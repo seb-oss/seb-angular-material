@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { SnackbarDemoComponent } from './snackbar-demo.component';
+import { OverlayDemoComponent } from './overlay-demo.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-describe('SnackbarDemoComponent', () => {
-  let component: SnackbarDemoComponent;
-  let fixture: ComponentFixture<SnackbarDemoComponent>;
+describe('OverlayDemoComponent', () => {
+  let component: OverlayDemoComponent;
+  let fixture: ComponentFixture<OverlayDemoComponent>;
 
   const snackbarStub = {
     open: () => null
@@ -13,7 +13,7 @@ describe('SnackbarDemoComponent', () => {
 
   beforeEach((done) => {
     TestBed.configureTestingModule({
-      declarations: [SnackbarDemoComponent],
+      declarations: [OverlayDemoComponent],
       providers: [{ provide: MatSnackBar, useValue: snackbarStub },],
       schemas: [NO_ERRORS_SCHEMA],
     })
@@ -22,7 +22,7 @@ describe('SnackbarDemoComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SnackbarDemoComponent);
+    fixture = TestBed.createComponent(OverlayDemoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

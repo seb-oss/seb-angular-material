@@ -12,11 +12,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.component';
 import { TabsDemoComponent } from './components/tabs-demo/tabs-demo.component';
 import { InputTextareaDemoComponent } from './components/input-textarea-demo/input-textarea-demo.component';
-import { SnackbarDemoComponent } from './components/snackbar-demo/snackbar-demo.component';
+import { OverlayDemoComponent, BottomSheetOverviewExampleSheetComponent } from './components/overlay-demo/overlay-demo.component';
 import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 import { ButtonDemoComponent } from './components/button-demo/button-demo.component';
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { BadgeDemoComponent } from './components/badge-demo/badge-demo.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,15 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     TooltipDemoComponent,
     TabsDemoComponent,
     InputTextareaDemoComponent,
-    SnackbarDemoComponent,
+    OverlayDemoComponent,
     CollapseDemoComponent,
     ButtonDemoComponent,
     ButtonToggleDemoComponent,
+    BadgeDemoComponent,
+    BottomSheetOverviewExampleSheetComponent,
+  ],
+  entryComponents: [
+    BottomSheetOverviewExampleSheetComponent,
   ],
   imports: [
     BrowserModule,

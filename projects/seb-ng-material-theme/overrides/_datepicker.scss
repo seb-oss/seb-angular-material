@@ -1,0 +1,12 @@
+body {
+  .mat-datepicker-content .mat-calendar {
+    height: 360px;
+
+    button.mat-calendar-period-button.mat-button {
+      height: 40px;
+      line-height: 40px;
+      min-height: 40px;
+    }
+  }
+
+}
