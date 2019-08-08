@@ -27,8 +27,8 @@ $seb-mat-light-green-theme: seb-mat-light-theme($sebvi-color-green);
 
 @include mat-core-theme($seb-mat-light-darkblue1-theme);
 @include mat-autocomplete-theme($seb-mat-light-darkblue1-theme);
-// @include mat-badge-theme($seb-mat-light-darkblue1-theme);
-// @include mat-bottom-sheet-theme($seb-mat-light-darkblue1-theme);
+@include mat-badge-theme($seb-mat-light-darkblue1-theme);
+@include mat-bottom-sheet-theme($seb-mat-light-darkblue1-theme);
 @include mat-button-theme($seb-mat-light-darkblue1-theme);
 @include mat-button-toggle-theme($seb-mat-light-darkblue1-theme);
 @include mat-card-theme($seb-mat-light-darkblue1-theme);
