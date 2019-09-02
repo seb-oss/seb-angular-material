@@ -14,7 +14,7 @@ describe('OverlayDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [OverlayDemoComponent],
-      providers: [{ provide: MatSnackBar, useValue: snackbarStub },],
+      providers: [{ provide: MatSnackBar, useValue: snackbarStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents()
