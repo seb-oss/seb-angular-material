@@ -34,9 +34,12 @@
             "styles": [
               "src/styles.scss",
               "src/layout/style.css",
-              "projects/seb-ng-material-theme/seb-mat-theme.scss"
+              "projects/seb-ng-material-theme/seb-mat-theme.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+            ]
           },
           "configurations": {
             "production": {
