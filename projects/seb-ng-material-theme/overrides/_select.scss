@@ -1,0 +1,19 @@
+.mat-select:not(.no-seb-style) {
+  .mat-select-arrow {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    color: $vanilla-color-blue;
+    margin: 0 5px;
+  }
+}
+
+mat-form-field.mat-paginator-page-size-select {
+  &:not(.no-seb-style) .mat-select .mat-select-arrow {
+    padding: 3px;
+  }
+}
