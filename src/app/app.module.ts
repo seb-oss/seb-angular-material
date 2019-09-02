@@ -18,6 +18,7 @@ import { ButtonDemoComponent } from './components/button-demo/button-demo.compon
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BadgeDemoComponent } from './components/badge-demo/badge-demo.component';
+import { TableDemoComponent } from './components/table-demo/table-demo.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BadgeDemoComponent } from './components/badge-demo/badge-demo.component
     ButtonToggleDemoComponent,
     BadgeDemoComponent,
     BottomSheetOverviewExampleSheetComponent,
+    TableDemoComponent,
   ],
   entryComponents: [
     BottomSheetOverviewExampleSheetComponent,

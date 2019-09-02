@@ -22,6 +22,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [],
@@ -42,13 +45,16 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatInputModule,
     MatListModule,
     MatNativeDateModule,
+    MatPaginatorModule,
     MatProgressBarModule,
     MatRadioModule,
     MatSelectModule,
     MatSlideToggleModule,
     MatSnackBarModule,
+    MatTableModule,
     MatTabsModule,
     MatTooltipModule,
+    MatSortModule,
   ]
 })
 export class MaterialModule { }
