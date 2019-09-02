@@ -12,6 +12,14 @@
       <input type="text" matInput>
       <mat-hint>Hint</mat-hint>
     </mat-form-field>
+    <br />
+    <mat-form-field appearance="outline">
+      <mat-select placeholder="Select">
+        <mat-option value="option">Option</mat-option>
+        <mat-option value="option1">Option1</mat-option>
+        <mat-option value="option2">Option2</mat-option>
+      </mat-select>
+    </mat-form-field>
     <form class="example-form" [formGroup]="exampleForm">
       <div>
         <strong>Email</strong>
@@ -67,6 +75,10 @@
   <mat-card-content>
     <mat-form-field>
       <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
+    <br />
+    <mat-form-field appearance="outline">
+      <textarea matInput placeholder="Textarea outlined"></textarea>
     </mat-form-field>
   </mat-card-content>
 
