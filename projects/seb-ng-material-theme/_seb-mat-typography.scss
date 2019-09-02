@@ -1,7 +1,10 @@
-@import 'visual-identity/src/typography';
+@import '~@sebgroup/fonts/scss/variables';
 
-$seb-typography: mat-typography-config(
-  $font-family: 'SEBSansSerif',
+// For fonts to load, we need to change path to be relative to project root.
+$seb-font-path: '~@sebgroup/fonts/fonts';
+
+@import '~@sebgroup/fonts/scss/path';
+
+$seb-typography: mat-typography-config($font-family: 'SEBSansSerif',
   $headline: mat-typography-level(32px, 48px, 700),
-  $body-1: mat-typography-level(16px, 24px, 500)
-);
+  $body-1: mat-typography-level(16px, 24px, 500));

@@ -12,5 +12,8 @@
   "peerDependencies": {
     "@angular/material": "^8.0.0"
   },
+  "dependencies": {
+    "@sebgroup/vanilla": "^4.5.2"
+  },
   "license": "Apache-2.0"
 }

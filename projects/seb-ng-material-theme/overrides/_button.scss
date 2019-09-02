@@ -20,12 +20,12 @@ body {
   .mat-fab,
   .mat-mini-fab {
     &.mat-secondary {
-      color: $sebvi-color-darkblue1;
+      color: $vanilla-color-darkblue1;
 
       &:active,
       &:hover {
-        background: $sebvi-color-blue;
-        color: $sebvi-color-white;
+        background: $vanilla-color-blue;
+        color: $vanilla-color-white;
       }
     }
   }
@@ -36,18 +36,18 @@ body {
     border: 1px solid transparent;
 
     &[color="secondary"] {
-      border-color: $sebvi-color-darkblue1;
+      border-color: $vanilla-color-darkblue1;
 
       &[disabled] {
-        border-color: $sebvi-color-grey7;
-        background-color: $sebvi-color-grey9;
-        color: $sebvi-color-grey6;
+        border-color: $vanilla-color-grey7;
+        background-color: $vanilla-color-grey9;
+        color: $vanilla-color-grey6;
 
         &:active,
         &:hover {
-          background-color: $sebvi-color-grey9;
-          color: $sebvi-color-grey6;
-          border-color: $sebvi-color-grey7;
+          background-color: $vanilla-color-grey9;
+          color: $vanilla-color-grey6;
+          border-color: $vanilla-color-grey7;
         }
       }
     }
@@ -56,40 +56,40 @@ body {
   .mat-stroked-button[color="light"] {
     border-radius: .25em;
     padding: 0 1em;
-    border: 1px solid $sebvi-color-white;
-    color: $sebvi-color-white;
+    border: 1px solid $vanilla-color-white;
+    color: $vanilla-color-white;
 
     &:active,
     &:hover {
-      background-color: $sebvi-color-white;
-      color: $sebvi-color-grey2;
-      border-color: $sebvi-color-white;
+      background-color: $vanilla-color-white;
+      color: $vanilla-color-grey2;
+      border-color: $vanilla-color-white;
     }
 
     &[disabled] {
-      border-color: $sebvi-color-grey8;
+      border-color: $vanilla-color-grey8;
       background-color: transparent;
-      color: $sebvi-color-grey8;
+      color: $vanilla-color-grey8;
     }
   }
 
   .mat-stroked-button[color="dark"] {
     border-radius: .25em;
     padding: 0 1em;
-    color: $sebvi-color-grey2;
-    border: 1px solid $sebvi-color-grey2;
+    color: $vanilla-color-grey2;
+    border: 1px solid $vanilla-color-grey2;
 
     &:active,
     &:hover {
-      background-color: $sebvi-color-grey2;
-      color: $sebvi-color-white;
-      border-color: $sebvi-color-grey2;
+      background-color: $vanilla-color-grey2;
+      color: $vanilla-color-white;
+      border-color: $vanilla-color-grey2;
     }
 
     &[disabled] {
-      border-color: $sebvi-color-grey7;
+      border-color: $vanilla-color-grey7;
       background-color: transparent;
-      color: $sebvi-color-grey7;
+      color: $vanilla-color-grey7;
     }
   }
 
@@ -97,14 +97,14 @@ body {
 
     &.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
     &.mat-button-toggle-group-appearance-standard {
-      border: 1px solid $sebvi-color-darkblue1;
+      border: 1px solid $vanilla-color-darkblue1;
     }
 
     .mat-button-toggle {
-      background-color: $sebvi-color-white;
-      color: $sebvi-color-darkblue1;
-      border-left: 1px solid $sebvi-color-darkblue1 !important;
-      border-right: 1px solid $sebvi-color-darkblue1 !important;
+      background-color: $vanilla-color-white;
+      color: $vanilla-color-darkblue1;
+      border-left: 1px solid $vanilla-color-darkblue1 !important;
+      border-right: 1px solid $vanilla-color-darkblue1 !important;
 
       &:not(:first-child) {
         border-right: none !important;
@@ -115,24 +115,24 @@ body {
       }
 
       &[disabled] {
-        background-color: $sebvi-color-grey9;
-        color: $sebvi-color-grey7;
-        border: 1px solid $sebvi-color-grey7;
+        background-color: $vanilla-color-grey9;
+        color: $vanilla-color-grey7;
+        border: 1px solid $vanilla-color-grey7;
       }
 
       &.mat-button-toggle-checked {
-        background-color: $sebvi-color-darkblue1;
-        color: $sebvi-color-white;
+        background-color: $vanilla-color-darkblue1;
+        color: $vanilla-color-white;
       }
 
       &.mat-button-toggle-disabled {
-        background-color: $sebvi-color-grey9;
-        color: $sebvi-color-grey7;
+        background-color: $vanilla-color-grey9;
+        color: $vanilla-color-grey7;
 
         &.mat-button-toggle-checked {
-          background-color: $sebvi-color-darkblue1;
-          border: 1px solid $sebvi-color-darkblue1;
-          color: $sebvi-color-white;
+          background-color: $vanilla-color-darkblue1;
+          border: 1px solid $vanilla-color-darkblue1;
+          color: $vanilla-color-white;
         }
       }
     }
@@ -141,36 +141,36 @@ body {
 
   mat-button-toggle-group[color="green"] {
     .mat-button-toggle {
-      background-color: $sebvi-color-white;
-      color: $sebvi-color-darkgreen2;
-      border: 1px solid $sebvi-color-darkgreen2;
+      background-color: $vanilla-color-white;
+      color: $vanilla-color-darkgreen2;
+      border: 1px solid $vanilla-color-darkgreen2;
 
       &:not(:first-of-type) {
         border-left: none;
       }
 
       &[disabled] {
-        background-color: $sebvi-color-grey9;
-        color: $sebvi-color-grey7;
-        border: 1px solid $sebvi-color-grey7;
+        background-color: $vanilla-color-grey9;
+        color: $vanilla-color-grey7;
+        border: 1px solid $vanilla-color-grey7;
       }
 
       &.mat-button-toggle-checked {
-        background-color: $sebvi-color-darkgreen2;
-        color: $sebvi-color-white;
+        background-color: $vanilla-color-darkgreen2;
+        color: $vanilla-color-white;
       }
     }
 
     &[disabled] {
       .mat-button-toggle {
-        background-color: $sebvi-color-grey9;
-        color: $sebvi-color-grey7;
-        border: 1px solid $sebvi-color-grey7;
+        background-color: $vanilla-color-grey9;
+        color: $vanilla-color-grey7;
+        border: 1px solid $vanilla-color-grey7;
 
         &.mat-button-toggle-checked {
-          background-color: $sebvi-color-darkgreen2;
-          border: 1px solid $sebvi-color-darkgreen2;
-          color: $sebvi-color-white;
+          background-color: $vanilla-color-darkgreen2;
+          border: 1px solid $vanilla-color-darkgreen2;
+          color: $vanilla-color-white;
         }
       }
     }

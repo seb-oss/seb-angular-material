@@ -30,23 +30,23 @@
 
 @function seb-mat-palette($baseColor) {
   $variations: (50 ,100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400, A700);
-  $contrast: (); 
+  $contrast: ();
   $colors: ();
   @each $key in $variations {
     $color: seb-mat-color-variation($baseColor, $key);
     $red: red($color);
     $green: green($color);
     $blue: blue($color);
-    // @debug "Colors " $color $red $green $blue; 
+    // @debug "Colors " $color $red $green $blue;
     $colors: map-merge($colors , ($key : $color) );
     @if ($red*0.299 + $green*0.587 + $blue*0.114) > 186 {
-      $contrast: map-merge($contrast, ($key :$sebvi-color-black));
+      $contrast: map-merge($contrast, ($key :$vanilla-color-black));
     } @else {
-      $contrast: map-merge($contrast, ($key :$sebvi-color-white));
+      $contrast: map-merge($contrast, ($key :$vanilla-color-white));
     }
-    
+
   }
   $colors: map-merge($colors, (contrast : $contrast));
-  // @debug "Colors " $colors; 
+  // @debug "Colors " $colors;
   @return $colors;
 }
