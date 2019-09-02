@@ -1,39 +1,36 @@
 mat-expansion-panel:not(.no-seb-style) {
-    mat-expansion-panel-header {
-        position: relative;
-        transition: border-left-color 0.4s;
-        &::after {
-            border-style: solid;
-            border-width: 0 2px 2px 0;
-            content: '';
-            display: flex;
-            position: absolute;
-            left: 0.8em;
-            top: 20px;
-            padding: 3px;
-            transform: rotate(-45deg);
-            transition: top 0.4s, transform 0.4s;
-            vertical-align: middle;
-            color: $vanilla-color-blue;
-        }
-        border-left: 3px solid transparent;
-        &.mat-expanded {
-            border-left-color: $vanilla-color-green;
-            border-bottom-left-radius: 0px;
+  mat-expansion-panel-header {
+    position: relative;
 
-            &::after {
-                top: 28px;
-                transform: rotate(45deg);
-            }
-        }
-
-        .mat-expansion-panel-header-title {
-            padding-left: 1.5em;
-        }
-
-        .mat-expansion-indicator {
-            display: none;
-        }
-
+    &::after {
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      content: '';
+      display: flex;
+      position: absolute;
+      left: 1.3em;
+      top: 20px;
+      padding: 3px;
+      transform: rotate(45deg);
+      transition: top 0.4s, transform 0.4s;
+      vertical-align: middle;
+      color: $vanilla-color-blue;
     }
+
+    &.mat-expanded {
+      &::after {
+        top: 28px;
+        transform: rotate(-135deg);
+      }
+    }
+
+    .mat-expansion-panel-header-title {
+      padding-left: 1.5em;
+    }
+
+    .mat-expansion-indicator {
+      display: none;
+    }
+
+  }
 }
