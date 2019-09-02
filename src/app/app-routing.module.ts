@@ -8,6 +8,7 @@ import { TooltipDemoComponent } from './components/tooltip-demo/tooltip-demo.com
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
 import { CollapseDemoComponent } from './components/collapse-demo/collapse-demo.component';
 import { BadgeDemoComponent } from './components/badge-demo/badge-demo.component';
+import { TableDemoComponent } from './components/table-demo/table-demo.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonDemoComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'tooltip', component: TooltipDemoComponent },
   { path: 'expansionPanel', component: CollapseDemoComponent },
   { path: 'badge', component: BadgeDemoComponent },
+  { path: 'table', component: TableDemoComponent },
 ];
 
 @NgModule({

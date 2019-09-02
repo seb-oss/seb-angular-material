@@ -2,7 +2,7 @@
 <div class="view">
   <div class="brch-container">
     <main>
-      <mat-expansion-panel>
+      <mat-expansion-panel class="no-seb-borders">
         <mat-expansion-panel-header>
           <mat-panel-title>
             <h4>README</h4>
@@ -20,6 +20,7 @@
         <mat-chip [routerLink]="'tabs'">Tabs</mat-chip>
         <mat-chip [routerLink]="'tooltip'">Tooltip</mat-chip>
         <mat-chip [routerLink]="'badge'">Badge</mat-chip>
+        <mat-chip [routerLink]="'table'">Table</mat-chip>
       </mat-chip-list>
       <br />
       <router-outlet></router-outlet>
