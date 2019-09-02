@@ -1,9 +1,9 @@
-@import '~@sebgroup/fonts/scss/variables';
+@import '../../node_modules/@sebgroup/fonts/scss/variables';
 
 // For fonts to load, we need to change path to be relative to project root.
-$seb-font-path: '~@sebgroup/fonts/fonts';
+$seb-font-path: '../../node_modules/@sebgroup/fonts/fonts';
 
-@import '~@sebgroup/fonts/scss/path';
+@import '../../node_modules/@sebgroup/fonts/scss/path';
 
 $seb-typography: mat-typography-config($font-family: 'SEBSansSerif',
   $headline: mat-typography-level(32px, 48px, 700),
