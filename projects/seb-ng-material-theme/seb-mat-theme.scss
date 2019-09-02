@@ -1,10 +1,12 @@
+// @import '~@sebgroup/vanilla/src/defaults';
+
 @import '../../node_modules/@angular/material/theming';
 @import 'seb-mat-palettes';
 @import 'seb-mat-typography';
 // Plus imports for other components in your app.
 
 
-@function seb-mat-light-theme($baseColor, $accentColor: $baseColor, $warnColor: $sebvi-color-red) {
+@function seb-mat-light-theme($baseColor, $accentColor: $baseColor, $warnColor: $vanilla-color-red) {
   $primaryPallete: seb-mat-palette($baseColor);
   $accentPallete: seb-mat-palette($accentColor);
   $warnPallete: seb-mat-palette($warnColor);
@@ -22,8 +24,8 @@
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-$seb-mat-light-darkblue1-theme: seb-mat-light-theme($sebvi-color-darkblue1);
-$seb-mat-light-green-theme: seb-mat-light-theme($sebvi-color-green);
+$seb-mat-light-darkblue1-theme: seb-mat-light-theme($vanilla-color-darkblue1);
+$seb-mat-light-green-theme: seb-mat-light-theme($vanilla-color-green);
 
 @include mat-core-theme($seb-mat-light-darkblue1-theme);
 @include mat-autocomplete-theme($seb-mat-light-darkblue1-theme);

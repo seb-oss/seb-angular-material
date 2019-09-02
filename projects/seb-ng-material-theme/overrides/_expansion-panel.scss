@@ -14,11 +14,11 @@ mat-expansion-panel:not(.no-seb-style) {
             transform: rotate(-45deg);
             transition: top 0.4s, transform 0.4s;
             vertical-align: middle;
-            color: $sebvi-color-blue;
+            color: $vanilla-color-blue;
         }
         border-left: 3px solid transparent;
         &.mat-expanded {
-            border-left-color: $sebvi-color-green;
+            border-left-color: $vanilla-color-green;
             border-bottom-left-radius: 0px;
 
             &::after {
