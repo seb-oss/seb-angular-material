@@ -29,7 +29,6 @@
     "@angular/platform-browser-dynamic": "^8.2.0",
     "@angular/router": "^8.2.0",
     "@sebgroup/vanilla": "^4.5.2",
-    "@fortawesome/fontawesome-pro": "^5.10.0",
     "core-js": "^2.6.9",
     "rxjs": "~6.5.2",
     "showdown": "^1.9.0",
