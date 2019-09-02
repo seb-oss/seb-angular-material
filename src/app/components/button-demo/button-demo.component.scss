@@ -1,7 +1,11 @@
 app-button-demo {
 
-  button, a {
-    &.mat-raised-button, &.mat-flat-button, &.mat-stroked-button {
+  button,
+  a {
+
+    &.mat-raised-button,
+    &.mat-flat-button,
+    &.mat-stroked-button {
       margin-bottom: 0.5em;
       margin-right: 0.5em;
       margin-top: 0.5em;
@@ -13,11 +17,15 @@ app-button-demo {
     margin-bottom: 1em;
   }
 
-  .dark-background{
+  .dark-background {
     background: #FFC500;
   }
 
-  .light-background{
+  .light-background {
     background: #0092E1;
+  }
+
+  button .mat-icon {
+    margin-right: 10px;
   }
 }

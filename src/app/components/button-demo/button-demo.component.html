@@ -51,6 +51,24 @@
       <a mat-flat-button color="secondary" disabled>Secondary</a>
     </div>
 
+    <h3>Buttons With Icons</h3>
+    <div class="example-button-row">
+      <button mat-button color="warn">
+        <mat-icon [fontIcon]="'fa-trash-alt'"></mat-icon>
+        <span>Delete</span>
+      </button>
+
+      <button mat-raised-button color="primary" type="button">
+        <mat-icon [fontIcon]="'fa-file-export'"></mat-icon>
+        <span>Export</span>
+      </button>
+
+      <button type="button" mat-raised-button color="warn">
+        <mat-icon [fontIcon]="'fa-ban'"></mat-icon>
+        <span>Cancel</span>
+      </button>
+    </div>
+
     <h3>Stroked Buttons light</h3>
 
     <div class="example-code">color="light"</div>

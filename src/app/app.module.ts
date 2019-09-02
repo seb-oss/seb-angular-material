@@ -18,6 +18,7 @@ import { ButtonDemoComponent } from './components/button-demo/button-demo.compon
 import { ButtonToggleDemoComponent } from './components/button-toggle-demo/button-toggle-demo.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BadgeDemoComponent } from './components/badge-demo/badge-demo.component';
+import { MatIconRegistry } from '@angular/material/icon';
 import { TableDemoComponent } from './components/table-demo/table-demo.component';
 
 @NgModule({
@@ -52,4 +53,10 @@ import { TableDemoComponent } from './components/table-demo/table-demo.component
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(
+    iconReg: MatIconRegistry,
+  ) {
+    iconReg.setDefaultFontSetClass('fa');
+  }
+}
