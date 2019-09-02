@@ -1,5 +1,19 @@
-mat-expansion-panel:not(.no-seb-style) {
-  mat-expansion-panel-header {
+.mat-expansion-panel:not(.no-seb-style) {
+
+  &:not(.no-seb-borders) {
+    box-shadow: none;
+    border-top: 1px solid $vanilla-color-grey8;
+
+    &:last-of-type {
+      border-bottom: 1px solid $vanilla-color-grey8;
+    }
+
+    &.mat-expansion-panel-spacing {
+      margin: 0;
+    }
+  }
+
+  .mat-expansion-panel-header {
     position: relative;
 
     &::after {
@@ -9,8 +23,8 @@ mat-expansion-panel:not(.no-seb-style) {
       display: flex;
       position: absolute;
       left: 1.3em;
-      top: 20px;
-      padding: 3px;
+      top: 15px;
+      padding: 5px;
       transform: rotate(45deg);
       transition: top 0.4s, transform 0.4s;
       vertical-align: middle;
@@ -31,6 +45,5 @@ mat-expansion-panel:not(.no-seb-style) {
     .mat-expansion-indicator {
       display: none;
     }
-
   }
 }
