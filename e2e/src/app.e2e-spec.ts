@@ -7,8 +7,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display title', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('SEB Angular Material Theme');
+  it('should display title', async () => {
+    await page.navigateToRoot();
+    await page.getTitle().isPresent();
+    expect(await page.getTitle().getText()).toEqual('SEB Angular Material Theme');
   });
 });
