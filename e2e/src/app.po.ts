@@ -8,6 +8,10 @@ export class AppPage {
     return browser.get('/#/buttons');
   }
 
+  navigateToToggleButtonsDemo() {
+    return browser.get('/#/buttonToggle');
+  }
+
   getTitle() {
     return element(by.css('app-root h1'));
   }
