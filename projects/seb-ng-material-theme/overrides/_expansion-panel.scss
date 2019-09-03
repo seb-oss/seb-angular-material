@@ -13,6 +13,11 @@
     }
   }
 
+  .mat-expansion-panel-body {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .mat-expansion-panel-header {
     position: relative;
 
@@ -40,6 +45,8 @@
 
     .mat-expansion-panel-header-title {
       padding-left: 1.5em;
+      font-size: 20px;
+      font-weight: 800;
     }
 
     .mat-expansion-indicator {
