@@ -12,6 +12,10 @@ export class AppPage {
     return browser.get('/#/buttonToggle');
   }
 
+  navigateToInputsDemo() {
+    return browser.get('/#/inputs');
+  }
+
   getTitle() {
     return element(by.css('app-root h1'));
   }
