@@ -5,7 +5,7 @@ let config = require('./protractor.conf.js').config;
 // screenshots instead of comparing against them.
 
 config.capabilities.chromeOptions = {
-  args: ["--headless"]
+  args: ["--headless", 'window-size=1366,1600']
 };
 
 exports.config = config;
