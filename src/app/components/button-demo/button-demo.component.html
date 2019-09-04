@@ -1,37 +1,22 @@
+<h2>Buttons</h2>
+
+<mat-button-toggle-group color="primary" [(value)]="selectedView">
+  <mat-button-toggle value="Buttons">
+    Buttons
+  </mat-button-toggle>
+  <mat-button-toggle value="Links">
+    Links
+  </mat-button-toggle>
+  <mat-button-toggle value="Both" aria-label="linksAndButtons">
+    Both
+  </mat-button-toggle>
+</mat-button-toggle-group>
+
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Buttons</mat-card-title>
+    <mat-card-title>SEB Style Buttons</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <mat-button-toggle-group color="primary" [(value)]="selectedView">
-      <mat-button-toggle value="Buttons">
-        Buttons
-      </mat-button-toggle>
-      <mat-button-toggle value="Links">
-        Links
-      </mat-button-toggle>
-      <mat-button-toggle value="Both" aria-label="linksAndButtons">
-        Both
-      </mat-button-toggle>
-    </mat-button-toggle-group>
-
-    <h3>Raised Buttons</h3>
-    <div *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
-      <button mat-raised-button color="primary">Primary</button>
-      <button mat-raised-button>Basic</button>
-      <button mat-raised-button color="accent">Accent</button>
-      <button mat-raised-button color="warn">Warn</button>
-      <button mat-raised-button color="secondary">Secondary</button>
-      <button mat-raised-button color="secondary" disabled>Secondary</button>
-    </div>
-    <div *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
-      <a mat-raised-button color="primary">Primary</a>
-      <a mat-raised-button>Basic</a>
-      <a mat-raised-button color="accent">Accent</a>
-      <a mat-raised-button color="warn">Warn</a>
-      <a mat-raised-button color="secondary">Secondary</a>
-      <a mat-raised-button color="secondary" disabled>Secondary</a>
-    </div>
 
     <h3>Flat Buttons</h3>
     <div *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
@@ -58,21 +43,19 @@
         <span>Delete</span>
       </button>
 
-      <button mat-raised-button color="primary" type="button">
+      <button mat-flat-button color="primary" type="button">
         <mat-icon [fontIcon]="'fa-file-export'"></mat-icon>
         <span>Export</span>
       </button>
 
-      <button type="button" mat-raised-button color="warn">
+      <button mat-flat-button color="warn" type="button">
         <mat-icon [fontIcon]="'fa-ban'"></mat-icon>
         <span>Cancel</span>
       </button>
     </div>
 
     <h3>Stroked Buttons light</h3>
-
     <div class="example-code">color="light"</div>
-
     <div class="example-button-row light-background">
       <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="light">Light</button>
       <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="light"
@@ -82,16 +65,58 @@
     </div>
 
     <h3>Stroked Buttons dark</h3>
-
     <div class="example-code">color="dark"</div>
-
-
     <div class="example-button-row dark-background">
       <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="dark">Dark</button>
       <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="dark"
         disabled>Dark</button>
       <a *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="dark">Dark</a>
       <a *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" mat-stroked-button color="dark" disabled>Dark</a>
+    </div>
+
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Other Material examples</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+
+    <h3>Basic Buttons</h3>
+    <div *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
+      <button mat-button color="primary">Primary</button>
+      <button mat-button>Basic</button>
+      <button mat-button color="accent">Accent</button>
+      <button mat-button color="warn">Warn</button>
+      <button mat-button color="secondary">Secondary</button>
+      <button mat-button color="secondary" disabled>Secondary</button>
+    </div>
+    <div *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
+      <a mat-button color="primary">Primary</a>
+      <a mat-button>Basic</a>
+      <a mat-button color="accent">Accent</a>
+      <a mat-button color="warn">Warn</a>
+      <a mat-button color="secondary">Secondary</a>
+      <a mat-button color="secondary" disabled>Secondary</a>
+    </div>
+
+    <h3>Raised Buttons</h3>
+    <div *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
+      <button mat-raised-button color="primary">Primary</button>
+      <button mat-raised-button>Basic</button>
+      <button mat-raised-button color="accent">Accent</button>
+      <button mat-raised-button color="warn">Warn</button>
+      <button mat-raised-button color="secondary">Secondary</button>
+      <button mat-raised-button color="secondary" disabled>Secondary</button>
+    </div>
+    <div *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" class="example-button-row">
+      <a mat-raised-button color="primary">Primary</a>
+      <a mat-raised-button>Basic</a>
+      <a mat-raised-button color="accent">Accent</a>
+      <a mat-raised-button color="warn">Warn</a>
+      <a mat-raised-button color="secondary">Secondary</a>
+      <a mat-raised-button color="secondary" disabled>Secondary</a>
     </div>
 
   </mat-card-content>
