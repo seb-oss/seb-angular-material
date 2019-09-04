@@ -10,7 +10,7 @@ config.capabilities.chromeOptions = {
     'window-size=1366,1600',
     '--disable-gpu',
     // '--hide-scrollbars',
-    '--font-render-hinting=none ',
+    '--font-render-hinting=medium',
   ]
 };
 

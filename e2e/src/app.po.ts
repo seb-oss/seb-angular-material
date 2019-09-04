@@ -20,6 +20,10 @@ export class AppPage {
     return browser.get('/#/inputs');
   }
 
+  navigateToTabsDemo() {
+    return browser.get('/#/tabs');
+  }
+
   getTitle() {
     return element(by.css('app-root h1'));
   }
