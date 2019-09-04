@@ -13,8 +13,9 @@ describe('buttons demo', () => {
 
   beforeEach(async () => {
     const bothButton = browser.element(by.css('mat-button-toggle[aria-label="linksAndButtons"] button'));
-    await bothButton.isPresent();
+    await browser.wait(bothButton.isPresent());
     await bothButton.click();
+    await browser.sleep(500);
   });
 
   it('looks correct', async () => {
