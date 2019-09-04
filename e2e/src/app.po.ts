@@ -12,6 +12,10 @@ export class AppPage {
     return browser.get('/#/buttonToggle');
   }
 
+  navigateToExpansionPanelDemo() {
+    return browser.get('/#/expansionPanel');
+  }
+
   navigateToInputsDemo() {
     return browser.get('/#/inputs');
   }
