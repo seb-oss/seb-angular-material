@@ -21,6 +21,10 @@ export class AppPage {
     return browser.get('/#/inputs');
   }
 
+  navigateToTabsDemo() {
+    return browser.get('/#/tabs');
+  }
+
   navigateToOverlayDemo() {
     return browser.get('/#/overlay');
   }

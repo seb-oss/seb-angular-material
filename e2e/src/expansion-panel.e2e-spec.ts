@@ -8,18 +8,18 @@ describe('expansion panel demo', () => {
   beforeAll(async () => {
     page = new AppPage();
     await page.navigateToExpansionPanelDemo();
-
   });
 
-  beforeEach(async () => {
+  it('expansion panel looks correct before', async () => {
+    await testScreenshot('e2e/goldens/expansionPanelDemo0.png');
+  });
+
+  it('expansion panel looks correct after', async () => {
     const expansionPanel = browser.element(by.css('mat-expansion-panel:nth-child(2)'));
     await browser.wait(expansionPanel.isPresent());
     await expansionPanel.click();
     await browser.sleep(500);
-  });
-
-  it('looks correct', async () => {
-    await testScreenshot('e2e/goldens/expansionPanelDemo0.png');
+    await testScreenshot('e2e/goldens/expansionPanelDemo1.png');
   });
 
 });
