@@ -12,9 +12,10 @@ describe('inputs demo', () => {
   });
 
   beforeEach(async () => {
-    const bothButton = browser.element(by.css('.mat-form-field-type-mat-select.mat-form-field-appearance-outline'));
-    await bothButton.isPresent();
-    await bothButton.click();
+    const selectInput = browser.element(by.css('.mat-form-field-type-mat-select.mat-form-field-appearance-outline'));
+    await browser.wait(selectInput.isPresent());
+    await selectInput.click();
+    await browser.sleep(500);
   });
 
   it('looks correct', async () => {

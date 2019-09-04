@@ -13,8 +13,9 @@ describe('toggle buttons demo', () => {
 
   beforeEach(async () => {
     const bothButton = browser.element(by.css('.mat-slide-toggle-bar'));
-    await bothButton.isPresent();
+    await browser.wait(bothButton.isPresent());
     await bothButton.click();
+    await browser.sleep(500);
   });
 
   it('looks correct', async () => {
