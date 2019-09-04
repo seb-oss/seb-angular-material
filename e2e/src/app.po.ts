@@ -4,6 +4,7 @@ export class AppPage {
   navigateToRoot() {
     return browser.get('/');
   }
+
   navigateToButtonsDemo() {
     return browser.get('/#/buttons');
   }
@@ -18,6 +19,14 @@ export class AppPage {
 
   navigateToInputsDemo() {
     return browser.get('/#/inputs');
+  }
+
+  navigateToTabsDemo() {
+    return browser.get('/#/tabs');
+  }
+
+  navigateToOverlayDemo() {
+    return browser.get('/#/overlay');
   }
 
   getTitle() {
