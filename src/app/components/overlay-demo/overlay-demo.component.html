@@ -5,22 +5,24 @@
   <mat-card-content>
     <p>For SEB snackbar set 'panelClass' option to: 'sebSuccessSnackbar', 'sebWarnSnackbar',
       'sebErrorSnackbar'</p>
-    <button mat-flat-button (click)="openSnackBar()" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openSnackBar()" aria-label="Show an example snack-bar">
       Show SEB snackbar
     </button>
-    <button mat-flat-button (click)="openSnackBar('sebSuccessSnackbar')" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openSnackBar('sebSuccessSnackbar')"
+      aria-label="Show an example snack-bar">
       Show SEB Success snackbar
     </button>
-    <button mat-flat-button (click)="openSnackBar('sebWarnSnackbar')" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openSnackBar('sebWarnSnackbar')" aria-label="Show an example snack-bar">
       Show SEB Warning snackbar
     </button>
-    <button mat-flat-button (click)="openSnackBar('sebErrorSnackbar')" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openSnackBar('sebErrorSnackbar')"
+      aria-label="Show an example snack-bar">
       Show SEB Error snackbar
     </button>
 
     <br />
     <p>Simple material snackbar ('panelClass': 'no-seb-style'):</p>
-    <button mat-flat-button (click)="openSnackBar('no-seb-style')" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openSnackBar('no-seb-style')" aria-label="Show an example snack-bar">
       Show material snackbar
     </button>
   </mat-card-content>
@@ -33,7 +35,7 @@
     <mat-card-title>Bottom Sheet</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <button mat-flat-button (click)="openBottomSheet()" aria-label="Show an example snack-bar">
+    <button mat-button color="primary" (click)="openBottomSheet()" aria-label="Show an example snack-bar">
       Show bottom sheet
     </button>
   </mat-card-content>
