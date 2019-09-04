@@ -75,3 +75,41 @@
     </mat-accordion>
   </mat-card-content>
 </mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Expansion/Collapse without SEB style</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <pre>&lt;mat-expansion-panel class=&quot;no-seb-style&quot;&gt;&lt;/mat-expansion-panel&gt;</pre>
+    <mat-accordion>
+      <mat-expansion-panel class="no-seb-style">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Personal data
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-form-field>
+          <input matInput placeholder="First name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Age">
+        </mat-form-field>
+      </mat-expansion-panel>
+      <mat-expansion-panel class="no-seb-style" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+          <mat-panel-description>
+            Currently I am {{panelOpenState ? 'open' : 'closed'}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-card-content>
+</mat-card>
