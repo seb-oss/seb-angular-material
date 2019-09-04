@@ -26,6 +26,7 @@ exports.config = {
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
     browser.driver.manage().window().setSize(1366, 1600);
+    browser.executeScript("document.body.style.zoom='125%'");
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
 };
