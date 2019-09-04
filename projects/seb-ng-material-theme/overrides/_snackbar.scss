@@ -1,0 +1,43 @@
+@import '@sebgroup/vanilla/src/colors';
+
+body {
+
+  .mat-snack-bar-container:not(.no-seb-style) {
+
+    border-radius: 0;
+    background-color: $vanilla-color-grey8;
+    color: $vanilla-color-black;
+
+    .mat-simple-snackbar-action {
+      color: $vanilla-color-black;
+    }
+
+    &.sebSuccessSnackbar {
+      background-color: $vanilla-color-darkgreen2;
+      color: $vanilla-color-white;
+
+      .mat-simple-snackbar-action {
+        color: $vanilla-color-white;
+      }
+    }
+
+    &.sebWarnSnackbar {
+      background-color: $vanilla-color-darkyellow1;
+      color: $vanilla-color-black;
+
+      .mat-simple-snackbar-action {
+        color: $vanilla-color-black;
+      }
+    }
+
+    &.sebErrorSnackbar {
+      background-color: $vanilla-color-darkred2;
+      color: $vanilla-color-white;
+
+      .mat-simple-snackbar-action {
+        color: $vanilla-color-white;
+      }
+    }
+
+  }
+}

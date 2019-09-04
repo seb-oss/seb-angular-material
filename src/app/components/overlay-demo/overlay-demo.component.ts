@@ -28,10 +28,14 @@ export class OverlayDemoComponent implements OnInit {
     private bottomSheet: MatBottomSheet,
   ) { }
 
-  openSnackBar() {
+  openSnackBar(panelClass: string) {
     this.snackBar.open('Snackbar Example', 'Ok',
       {
-        duration: 5000,
+        duration: 8000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'right',
+        panelClass: panelClass,
+        politeness: 'assertive',
       });
   }
 
