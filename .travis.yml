@@ -14,7 +14,7 @@ cache:
 script:
 - npm run theme:pack
 - npm run build -- --prod
-- npm run e2e:update
+- npm run e2e:update:travis
 
 deploy:
   - provider: pages
