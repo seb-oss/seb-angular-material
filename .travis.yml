@@ -27,8 +27,10 @@ deploy:
 git:
   depth: 3
 
-after_success:
+after_deploy:
 - npm run e2e --baseUrl=https://sebgroup.github.io/seb-angular-material
+
+after_success:
 - npm run travis-deploy-once "npm run semantic-release"
 
 branches:
