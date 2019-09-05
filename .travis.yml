@@ -1,4 +1,6 @@
 dist: trusty
+addons:
+  chrome: stable
 sudo: false
 language: node_js
 node_js: lts/*
@@ -26,7 +28,7 @@ git:
   depth: 3
 
 after_success:
-- npm run e2e
+- npm run e2e --baseUrl=https://sebgroup.github.io/seb-angular-material
 - npm run travis-deploy-once "npm run semantic-release"
 
 branches:
