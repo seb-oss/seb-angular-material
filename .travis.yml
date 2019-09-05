@@ -26,6 +26,7 @@ git:
   depth: 3
 
 after_success:
+- npm run e2e
 - npm run travis-deploy-once "npm run semantic-release"
 
 branches:
