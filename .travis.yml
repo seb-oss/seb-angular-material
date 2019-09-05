@@ -14,7 +14,7 @@ cache:
 script:
 - npm run theme:pack
 - npm run build -- --prod
-- npm run webdriver-update
+- npm run e2e:update
 
 deploy:
   - provider: pages
