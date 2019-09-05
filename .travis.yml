@@ -15,6 +15,7 @@ script:
 - npm run theme:pack
 - npm run build -- --prod
 - npm run e2e:update:travis
+- npm run e2e --baseUrl=https://sebgroup.github.io/seb-angular-material
 
 deploy:
   - provider: pages
