@@ -9,8 +9,8 @@ config.capabilities.chromeOptions = {
     "--headless",
     'window-size=1366,1600',
     '--disable-gpu',
-    // '--hide-scrollbars',
     '--font-render-hinting=medium',
+    '--disable-canvas-aa'
   ]
 };
 

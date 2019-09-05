@@ -21,6 +21,14 @@ export class AppPage {
     return browser.get('/#/inputs');
   }
 
+  navigateToBadgeDemo() {
+    return browser.get('/#/badge');
+  }
+
+  navigateToTableDemo() {
+    return browser.get('/#/table');
+  }
+
   navigateToTabsDemo() {
     return browser.get('/#/tabs');
   }
