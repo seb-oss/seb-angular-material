@@ -38,20 +38,35 @@
 
     <h3>Buttons With Icons</h3>
     <div class="example-button-row">
-      <button mat-button color="warn" type="button">
+      <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-button color="warn" type="button">
         <mat-icon [fontIcon]="'fa-trash-alt'"></mat-icon>
         <span>Delete</span>
       </button>
 
-      <button mat-flat-button color="primary" type="button">
+      <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-flat-button color="primary" type="button">
         <mat-icon [fontIcon]="'fa-file-export'"></mat-icon>
         <span>Export</span>
       </button>
 
-      <button mat-flat-button color="warn" type="button">
+      <button *ngIf="['Buttons', 'Both'].indexOf(selectedView) > -1" mat-flat-button color="warn" type="button">
         <mat-icon [fontIcon]="'fa-ban'"></mat-icon>
         <span>Cancel</span>
       </button>
+
+      <a *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" mat-button color="warn" type="button">
+        <mat-icon [fontIcon]="'fa-trash-alt'"></mat-icon>
+        <span>Delete</span>
+      </a>
+
+      <a *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" mat-flat-button color="primary" type="button">
+        <mat-icon [fontIcon]="'fa-file-export'"></mat-icon>
+        <span>Export</span>
+      </a>
+
+      <a *ngIf="['Links', 'Both'].indexOf(selectedView) > -1" mat-flat-button color="warn" type="button">
+        <mat-icon [fontIcon]="'fa-ban'"></mat-icon>
+        <span>Cancel</span>
+      </a>
     </div>
 
     <h3>Stroked Buttons light</h3>

@@ -15,6 +15,10 @@ body {
     .mat-icon {
       width: 16px;
       height: 16px;
+
+      &:not(:only-child) {
+        margin-right: 10px;
+      }
     }
   }
 
