@@ -8,8 +8,13 @@ body {
   .mat-button-toggle-group,
   .mat-button-toggle-focus-overlay {
     height: 44px;
-    line-height: 44px;
     min-height: 44px;
+    font-size: 16px;
+
+    .mat-icon {
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
@@ -19,8 +24,11 @@ body {
   .mat-raised-button,
   .mat-fab,
   .mat-flat-button,
-  .mat-mini-fab {
-    &.mat-secondary {
+  .mat-mini-fab,
+  mat-button-toggle-group[color="primary"]:not([aria-disabled=true]) {
+
+    &.mat-secondary,
+    .mat-button-toggle:not(.mat-button-toggle-checked) {
       color: $vanilla-color-darkblue1;
 
       &:active,
@@ -95,7 +103,7 @@ body {
     }
   }
 
-  mat-button-toggle-group[color="primary"] {
+  mat-button-toggle-group[color="primary"]:not([aria-disabled=true]) {
 
     &.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
     &.mat-button-toggle-group-appearance-standard {
@@ -125,54 +133,6 @@ body {
       &.mat-button-toggle-checked {
         background-color: $vanilla-color-darkblue1;
         color: $vanilla-color-white;
-      }
-
-      &.mat-button-toggle-disabled {
-        background-color: $vanilla-color-grey9;
-        color: $vanilla-color-grey7;
-
-        &.mat-button-toggle-checked {
-          background-color: $vanilla-color-darkblue1;
-          border: 1px solid $vanilla-color-darkblue1;
-          color: $vanilla-color-white;
-        }
-      }
-    }
-  }
-
-  mat-button-toggle-group[color="green"] {
-    .mat-button-toggle {
-      background-color: $vanilla-color-white;
-      color: $vanilla-color-darkgreen2;
-      border: 1px solid $vanilla-color-darkgreen2;
-
-      &:not(:first-of-type) {
-        border-left: none;
-      }
-
-      &[disabled] {
-        background-color: $vanilla-color-grey9;
-        color: $vanilla-color-grey7;
-        border: 1px solid $vanilla-color-grey7;
-      }
-
-      &.mat-button-toggle-checked {
-        background-color: $vanilla-color-darkgreen2;
-        color: $vanilla-color-white;
-      }
-    }
-
-    &[disabled] {
-      .mat-button-toggle {
-        background-color: $vanilla-color-grey9;
-        color: $vanilla-color-grey7;
-        border: 1px solid $vanilla-color-grey7;
-
-        &.mat-button-toggle-checked {
-          background-color: $vanilla-color-darkgreen2;
-          border: 1px solid $vanilla-color-darkgreen2;
-          color: $vanilla-color-white;
-        }
       }
     }
   }

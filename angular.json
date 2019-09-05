@@ -37,9 +37,7 @@
               "projects/seb-ng-material-theme/seb-mat-theme.scss",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
-            "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/all.js"
-            ],
+            "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "./node_modules"
