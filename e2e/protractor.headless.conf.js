@@ -7,10 +7,10 @@ let config = require('./protractor.conf.js').config;
 config.capabilities.chromeOptions = {
   args: [
     "--headless",
-    'window-size=1366,1600',
     '--disable-gpu',
     '--font-render-hinting=medium',
-    '--disable-canvas-aa'
+    '--disable-canvas-aa',
+    '--window.devicePixelRatio=1.25',
   ]
 };
 
