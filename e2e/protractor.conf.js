@@ -14,7 +14,7 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'https://sebgroup.github.io/seb-angular-material/#/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
