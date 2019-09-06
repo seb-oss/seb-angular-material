@@ -1,4 +1,3 @@
-os: windows
 dist: trusty
 addons:
   chrome: stable
