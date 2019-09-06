@@ -13,6 +13,7 @@ config.capabilities.chromeOptions = {
     '--disable-2d-canvas-clip-aa',
     '--disable-gl-drawing-for-tests',
     '--window.devicePixelRatio=1.25',
+    '--hide-scrollbars',
   ]
 };
 
