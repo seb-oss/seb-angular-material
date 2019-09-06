@@ -12,7 +12,7 @@
     "e2e:headless": "protractor e2e/protractor.headless.conf.js",
     "e2e:update": "webdriver-manager update --chrome --proxy http://gia.sebank.se:8080 --ignore_ssl",
     "e2e:update:travis": "webdriver-manager update --chrome",
-    "e2e:travis": "protractor e2e/protractor.headless.conf.js  --baseUrl=https://sebgroup.github.io/seb-angular-material",
+    "e2e:travis": "protractor e2e/protractor.headless.conf.js --baseUrl=https://sebgroup.github.io/seb-angular-material",
     "theme:compile": "node-sass --include-path node_modules --output-style=compressed projects/seb-ng-material-theme/seb-mat-theme.scss projects/seb-ng-material-theme/seb-mat-theme.css",
     "theme:docs": "copyfiles README.md LICENSE.md projects/seb-ng-material-theme",
     "theme:pack": "npm run theme:compile && npm run theme:docs",
