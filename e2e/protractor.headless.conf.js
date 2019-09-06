@@ -8,7 +8,7 @@ config.capabilities.chromeOptions = {
   args: [
     "--headless",
     '--disable-gpu',
-    '--font-render-hinting=medium',
+    '--font-render-hinting=none',
     '--disable-canvas-aa',
     '--window.devicePixelRatio=1.25',
     '--hide-scrollbars',
