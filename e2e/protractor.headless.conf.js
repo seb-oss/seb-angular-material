@@ -11,6 +11,7 @@ config.capabilities.chromeOptions = {
     '--font-render-hinting=medium',
     '--disable-canvas-aa',
     '--window.devicePixelRatio=1.25',
+    '--hide-scrollbars',
   ]
 };
 
