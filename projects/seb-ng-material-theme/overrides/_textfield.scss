@@ -10,14 +10,14 @@ body {
         padding: 1.6px 0 8px 0;
 
         .mat-form-field-label {
-          top: 17px;
+          top: 19px;
         }
       }
     }
 
     &.mat-form-field-can-float.mat-form-field-should-float {
       label.mat-form-field-label {
-        transform: translateY(-14px) scale(0.75);
+        transform: translateY(-17px) scale(0.75);
       }
     }
   }
