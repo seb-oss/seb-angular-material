@@ -1,21 +1,23 @@
 body {
 
   .mat-form-field-appearance-outline {
-    .mat-form-field-flex {
-      padding-left: 16px;
 
-      .mat-form-field-infix {
-        padding: 0.1em 0 0.5em 0;
+    div.mat-form-field-flex {
+      padding-left: 16px;
+      min-height: 44px;
+
+      div.mat-form-field-infix {
+        padding: 1.6px 0 8px 0;
 
         .mat-form-field-label {
-          top: 1em;
+          top: 19px;
         }
       }
     }
 
     &.mat-form-field-can-float.mat-form-field-should-float {
       label.mat-form-field-label {
-        transform: translateY(-0.9em) scale(0.75);
+        transform: translateY(-17px) scale(0.75);
       }
     }
   }
