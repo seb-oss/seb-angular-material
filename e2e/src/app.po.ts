@@ -37,6 +37,10 @@ export class AppPage {
     return browser.get('/#/overlay');
   }
 
+  navigateToTooltipDemo() {
+    return browser.get('/#/tooltip');
+  }
+
   getTitle() {
     return element(by.css('app-root h1'));
   }
