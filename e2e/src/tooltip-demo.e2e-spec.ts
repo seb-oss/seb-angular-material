@@ -15,6 +15,7 @@ describe('tooltip demo', () => {
     await browser.wait(button.isPresent());
     browser.actions().mouseMove(button).perform();
     await browser.sleep(500);
+
     await testScreenshot('e2e/goldens/tooltipDemo.png');
   });
 
