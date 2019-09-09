@@ -1,4 +1,6 @@
 dist: trusty
+addons:
+  chrome: stable
 sudo: false
 language: node_js
 node_js: lts/*
@@ -12,6 +14,8 @@ cache:
 script:
 - npm run theme:pack
 - npm run build -- --prod
+- npm run e2e:update:travis
+- npm run e2e:travis
 
 deploy:
   - provider: pages
@@ -24,6 +28,9 @@ deploy:
 
 git:
   depth: 3
+
+after_deploy:
+- npm run e2e:travis
 
 after_success:
 - npm run travis-deploy-once "npm run semantic-release"

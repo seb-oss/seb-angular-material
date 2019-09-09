@@ -2,39 +2,39 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   navigateToRoot() {
-    return browser.get('/');
+    return browser.get('./');
   }
 
   navigateToButtonsDemo() {
-    return browser.get('/#/buttons');
+    return browser.get('./#/buttons');
   }
 
   navigateToToggleButtonsDemo() {
-    return browser.get('/#/buttonToggle');
+    return browser.get('./#/buttonToggle');
   }
 
   navigateToExpansionPanelDemo() {
-    return browser.get('/#/expansionPanel');
+    return browser.get('./#/expansionPanel');
   }
 
   navigateToInputsDemo() {
-    return browser.get('/#/inputs');
+    return browser.get('./#/inputs');
   }
 
   navigateToBadgeDemo() {
-    return browser.get('/#/badge');
+    return browser.get('./#/badge');
   }
 
   navigateToTableDemo() {
-    return browser.get('/#/table');
+    return browser.get('./#/table');
   }
 
   navigateToTabsDemo() {
-    return browser.get('/#/tabs');
+    return browser.get('./#/tabs');
   }
 
   navigateToOverlayDemo() {
-    return browser.get('/#/overlay');
+    return browser.get('./#/overlay');
   }
 
   navigateToTooltipDemo() {
