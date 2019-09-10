@@ -38,7 +38,7 @@ export class AppPage {
   }
 
   navigateToTooltipDemo() {
-    return browser.get('/#/tooltip');
+    return browser.get('./#/tooltip');
   }
 
   getTitle() {
