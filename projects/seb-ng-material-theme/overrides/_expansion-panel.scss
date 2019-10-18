@@ -1,8 +1,21 @@
+.mat-accordion .mat-expansion-panel:not(.no-seb-style) {
+  &:first-of-type {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
 .mat-expansion-panel:not(.no-seb-style) {
 
   &:not(.no-seb-borders) {
     box-shadow: none;
     border-top: 1px solid $vanilla-color-grey8;
+    border-radius: 0;
 
     &:last-of-type {
       border-bottom: 1px solid $vanilla-color-grey8;
