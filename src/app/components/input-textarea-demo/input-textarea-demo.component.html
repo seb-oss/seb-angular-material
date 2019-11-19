@@ -112,7 +112,18 @@
     <mat-hint>Hint</mat-hint>
   </mat-form-field>
 
+  <mat-card-header>
+    <mat-card-title>Toggles</mat-card-title>
+    <mat-card-subtitle>With [disableRipple]=&quot;true&quot;</mat-card-subtitle>
+  </mat-card-header>
+  <mat-checkbox [disableRipple]="true">Check me!</mat-checkbox>
   <br />
+  <mat-radio-group aria-label="Select an option">
+    <mat-radio-button [disableRipple]="true" value="1">Option 1</mat-radio-button>
+    <mat-radio-button [disableRipple]="true" value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+  <br />
+  <mat-slide-toggle [disableRipple]="true">Slide me!</mat-slide-toggle>
 
   <mat-card-actions>
     <a href="https://material.angular.io/components/form-field/overview" mat-button target="_blank">
