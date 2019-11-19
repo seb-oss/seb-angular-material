@@ -1,0 +1,31 @@
+.mat-tab-group:not(.no-seb-style) {
+  .mat-tab-header {
+    border: none;
+
+    .mat-tab-label {
+      opacity: 1;
+
+      &:not(.mat-tab-label-active) {
+        border-bottom: 1px solid $vanilla-color-grey6;
+        color: $vanilla-color-darkblue1;
+
+        &:hover {
+          background: $vanilla-color-blue;
+          color: $vanilla-color-white;
+        }
+      }
+
+      &.mat-tab-label-active {
+        border-top: 1px solid $vanilla-color-grey6;
+        border-right: 1px solid $vanilla-color-grey6;
+        border-left: 1px solid $vanilla-color-grey6;
+        color: $vanilla-color-grey2;
+      }
+
+    }
+
+    .mat-ink-bar {
+      display: none;
+    }
+  }
+}
