@@ -6,6 +6,7 @@
 
     div.mat-tab-label {
       opacity: 1;
+      font-size: 16px;
 
       &:not(.mat-tab-label-active) {
         border-bottom: $tab-border-style;
