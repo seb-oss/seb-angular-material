@@ -1,0 +1,45 @@
+.mat-tab-group:not(.no-seb-style) {
+  $tab-border-style: 1px solid $vanilla-color-grey6;
+
+  .mat-tab-header {
+    border: none;
+
+    div.mat-tab-label {
+      opacity: 1;
+      font-size: 16px;
+
+      &:not(.mat-tab-label-active) {
+        border-bottom: $tab-border-style;
+        color: $vanilla-color-darkblue1;
+
+        &:hover {
+          background: $vanilla-color-blue;
+          color: $vanilla-color-white;
+        }
+      }
+
+      &.mat-tab-label-active {
+        border-top: $tab-border-style;
+        border-right: $tab-border-style;
+        border-left: $tab-border-style;
+        color: $vanilla-color-grey2;
+      }
+
+    }
+
+    div.mat-tab-labels {
+
+      &::after {
+        width: 100%;
+        display: inline-flex;
+        border-bottom: $tab-border-style;
+        content: " ";
+      }
+
+    }
+
+    .mat-ink-bar {
+      display: none;
+    }
+  }
+}
