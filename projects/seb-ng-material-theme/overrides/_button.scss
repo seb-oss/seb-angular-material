@@ -129,12 +129,9 @@ body {
       color: $vanilla-color-darkblue1;
       border-left: 1px solid $vanilla-color-darkblue1 !important;
       border-right: 1px solid $vanilla-color-darkblue1 !important;
+      border-right: none !important;
 
-      &:not(:first-child) {
-        border-right: none !important;
-      }
-
-      &:not(:last-child) {
+      &:first-child {
         border-left: none !important;
       }
 
