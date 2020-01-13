@@ -23,6 +23,8 @@ import {
   TableDemoComponent,
   TabsDemoComponent,
   TooltipDemoComponent,
+  DialogDemoComponent,
+  DialogExampleComponent,
 } from './components';
 
 
@@ -42,9 +44,12 @@ import {
     TableDemoComponent,
     TabsDemoComponent,
     TooltipDemoComponent,
+    DialogDemoComponent,
+    DialogExampleComponent,
   ],
   entryComponents: [
     BottomSheetOverviewExampleSheetComponent,
+    DialogExampleComponent,
   ],
   imports: [
     BrowserModule,

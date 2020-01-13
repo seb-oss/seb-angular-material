@@ -10,3 +10,4 @@ export * from './overlay-demo/overlay-demo.component';
 export * from './table-demo/table-demo.component';
 export * from './tabs-demo/tabs-demo.component';
 export * from './tooltip-demo/tooltip-demo.component';
+export * from './dialog-demo/dialog-demo.component';
