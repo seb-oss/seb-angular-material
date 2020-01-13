@@ -1,5 +1,8 @@
 mat-dialog-container {
-  div.mat-dialog-actions {
+
+  mat-dialog-actions.mat-dialog-actions,
+  div.mat-dialog-actions,
+  .mat-dialog-actions {
     text-align: end;
     display: block;
 
