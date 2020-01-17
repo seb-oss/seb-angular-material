@@ -12,6 +12,7 @@ import {
   BadgeDemoComponent,
   TableDemoComponent
 } from './components';
+import { ChipDemoComponent } from './components/chip-demo/chip-demo.component';
 
 const routes: Routes = [
   { path: 'buttons', component: ButtonDemoComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'badge', component: BadgeDemoComponent },
   { path: 'table', component: TableDemoComponent },
   { path: 'dialog', component: DialogDemoComponent },
+  { path: 'chip', component: ChipDemoComponent },
 ];
 
 @NgModule({

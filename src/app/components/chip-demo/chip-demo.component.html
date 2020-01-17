@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Chips</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <pre>
+      &lt;mat-chip&gt;&#10;        Fruit&#10;        &lt;mat-icon matChipRemove *ngIf=&quot;removable&quot; [fontIcon]=&quot;&apos;fa-times&apos;&quot;&gt;&lt;/mat-icon&gt;&#10;      &lt;/mat-chip&gt;
+    </pre>
+    <mat-form-field class="example-chip-list" appearance="outline">
+      <mat-chip-list #chipList aria-label="Fruit selection">
+        <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" [removable]="removable"
+          (removed)="remove(fruit)">
+          {{fruit.name}}
+          <mat-icon matChipRemove *ngIf="removable" [fontIcon]="'fa-times'"></mat-icon>
+        </mat-chip>
+        <input placeholder="New fruit..." [matChipInputFor]="chipList"
+          [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+          (matChipInputTokenEnd)="add($event)">
+      </mat-chip-list>
+    </mat-form-field>
+    <br />
+    <br />
+    <p>Other examples: </p>
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip>One fish</mat-chip>
+      <mat-chip>Two fish</mat-chip>
+      <mat-chip color="primary" selected>Primary fish</mat-chip>
+      <mat-chip color="accent" selected>Accent fish</mat-chip>
+      <mat-chip color="warn" selected>Warn fish</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>

@@ -26,6 +26,7 @@ import {
   DialogDemoComponent,
   DialogExampleComponent,
 } from './components';
+import { ChipDemoComponent } from './components/chip-demo/chip-demo.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import {
     TooltipDemoComponent,
     DialogDemoComponent,
     DialogExampleComponent,
+    ChipDemoComponent,
   ],
   entryComponents: [
     BottomSheetOverviewExampleSheetComponent,

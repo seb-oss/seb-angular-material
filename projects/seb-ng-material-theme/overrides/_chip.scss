@@ -1,0 +1,33 @@
+.mat-chip {
+
+  &.mat-standard-chip {
+    font-size: 16px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: $vanilla-color-grey8;
+    color: $vanilla-color-grey2;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $vanilla-color-grey9;
+
+      .mat-icon,
+      .mat-icon:hover {
+        color: $vanilla-color-red;
+        opacity: 1;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 3px 3px $vanilla-color-darkblue2;
+    }
+
+    .mat-icon {
+      opacity: 1;
+    }
+  }
+}
