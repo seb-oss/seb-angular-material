@@ -8,8 +8,6 @@ import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-v
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatIconRegistry } from '@angular/material/icon';
-
-import 'hammerjs';
 import {
   BadgeDemoComponent,
   BottomSheetOverviewExampleSheetComponent,

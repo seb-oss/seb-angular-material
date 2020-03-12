@@ -10,7 +10,7 @@
     "url": "https://github.com/sebgroup/seb-angular-material"
   },
   "peerDependencies": {
-    "@angular/material": "^8.0.0"
+    "@angular/material": "^9.0.0"
   },
   "dependencies": {
     "@sebgroup/vanilla": "^4.5.2"
