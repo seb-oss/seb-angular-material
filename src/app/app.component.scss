@@ -1,26 +1,40 @@
+@import '@sebgroup/vanilla/src/colors';
+
 app-root {
 
-    .view {
-        padding-top: 60px;
-        background-color: #fff;
-        margin-bottom: 0.5em;
-        margin-top: 0.5em;
+  .view {
+    padding-top: 60px;
+    background-color: $vanilla-color-grey100;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  main {
+    div.navigation {
+      a {
+
+        &.mat-button {
+          margin-bottom: 0.5em;
+          margin-right: 0.5em;
+          margin-top: 0.5em;
+        }
+      }
+
     }
 
-    main {
-        display: block;
-    }
+    display: block;
+  }
 
-    app-header {
-        position: fixed;
-        display: block;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-    }
+  app-header {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
 
-    app-footer {
-        bottom: 0;
-    }
+  app-footer {
+    bottom: 0;
+  }
 }
