@@ -61,6 +61,7 @@ body {
 
     &[color="secondary"] {
       border-color: $vanilla-color-darkblue1;
+      background-color: transparent;
 
       &[disabled] {
         border-color: $vanilla-color-grey300;
