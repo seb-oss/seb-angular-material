@@ -1,5 +1,5 @@
 .mat-tab-group:not(.no-seb-style) {
-  $tab-border-style: 1px solid $vanilla-color-grey6;
+  $tab-border-style: 1px solid $vanilla-color-grey400;
 
   .mat-tab-header {
     border: none;
@@ -22,7 +22,7 @@
         border-top: $tab-border-style;
         border-right: $tab-border-style;
         border-left: $tab-border-style;
-        color: $vanilla-color-grey2;
+        color: $vanilla-color-grey800;
       }
 
     }

@@ -10,11 +10,11 @@
 
   &:not(.no-seb-borders) {
     box-shadow: none;
-    border-top: 1px solid $vanilla-color-grey8;
+    border-top: 1px solid $vanilla-color-grey200;
     border-radius: 0;
 
     &:last-of-type {
-      border-bottom: 1px solid $vanilla-color-grey8;
+      border-bottom: 1px solid $vanilla-color-grey200;
     }
 
     &.mat-expansion-panel-spacing {
