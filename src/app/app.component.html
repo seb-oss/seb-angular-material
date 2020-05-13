@@ -11,19 +11,19 @@
         <app-markdown-viewer [path]="'readme/README.md'"></app-markdown-viewer>
       </mat-expansion-panel>
       <br />
-      <mat-chip-list>
-        <mat-chip [routerLink]="'buttons'">Buttons</mat-chip>
-        <mat-chip [routerLink]="'buttonToggle'">Toggle Buttons</mat-chip>
-        <mat-chip [routerLink]="'inputs'">Inputs</mat-chip>
-        <mat-chip [routerLink]="'expansionPanel'">Expansion Panel</mat-chip>
-        <mat-chip [routerLink]="'overlay'">Overlay</mat-chip>
-        <mat-chip [routerLink]="'dialog'">Dialog</mat-chip>
-        <mat-chip [routerLink]="'tabs'">Tabs</mat-chip>
-        <mat-chip [routerLink]="'tooltip'">Tooltip</mat-chip>
-        <mat-chip [routerLink]="'badge'">Badge</mat-chip>
-        <mat-chip [routerLink]="'chip'">Chip</mat-chip>
-        <mat-chip [routerLink]="'table'">Table</mat-chip>
-      </mat-chip-list>
+      <div class="navigation">
+        <a mat-button [routerLink]="'buttons'">Buttons</a>
+        <a mat-button [routerLink]="'buttonToggle'">Toggle Buttons</a>
+        <a mat-button [routerLink]="'inputs'">Inputs</a>
+        <a mat-button [routerLink]="'expansionPanel'">Expansion Panel</a>
+        <a mat-button [routerLink]="'overlay'">Overlay</a>
+        <a mat-button [routerLink]="'dialog'">Dialog</a>
+        <a mat-button [routerLink]="'tabs'">Tabs</a>
+        <a mat-button [routerLink]="'tooltip'">Tooltip</a>
+        <a mat-button [routerLink]="'badge'">Badge</a>
+        <a mat-button [routerLink]="'chip'">Chip</a>
+        <a mat-button [routerLink]="'table'">Table</a>
+      </div>
       <br />
       <router-outlet></router-outlet>
       <br />
