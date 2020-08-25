@@ -120,8 +120,29 @@
   <br />
   <mat-radio-group aria-label="Select an option">
     <mat-radio-button [disableRipple]="true" value="1">Option 1</mat-radio-button>
-    <mat-radio-button [disableRipple]="true" value="2">Option 2</mat-radio-button>
+    <mat-radio-button [disabled]="true" [disableRipple]="true" value="2">Option 2</mat-radio-button>
   </mat-radio-group>
+  <br />
+  <br />
+  <form [formGroup]="inlineRadioForm" novalidate>
+    <mat-radio-group class="inline-flex" formControlName="type" [ngClass]="{ 'group-invalid': inlineRadioForm.invalid }">
+      <mat-radio-button value="private">Private</mat-radio-button>
+      <mat-radio-button value="corporate">Corporate</mat-radio-button>
+    </mat-radio-group>
+    <mat-error *ngIf="inlineRadioForm.get('type').hasError('required')">
+      Select one of the options
+    </mat-error>
+  </form>
+  <br />
+  <form [formGroup]="listRadioForm" novalidate>
+    <mat-radio-group class="inline-grid" formControlName="longOption" [ngClass]="{ 'group-invalid': listRadioForm.invalid }">
+      <mat-radio-button value="long option">A very long option</mat-radio-button>
+      <mat-radio-button value="even longer option">And an even longer option</mat-radio-button>
+    </mat-radio-group>
+    <mat-error *ngIf="listRadioForm.get('longOption').hasError('required')">
+      Select one of the options
+    </mat-error>
+  </form>
   <br />
   <mat-slide-toggle [disableRipple]="true">Slide me!</mat-slide-toggle>
 
