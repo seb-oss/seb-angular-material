@@ -13,6 +13,14 @@ export class InputTextareaDemoComponent implements OnInit {
     exampleField: new FormControl(undefined, Validators.required),
   });
 
+  inlineRadioForm = new FormGroup({
+    type: new FormControl('', Validators.required)
+  });
+
+  listRadioForm = new FormGroup({
+    longOption: new FormControl('', Validators.required)
+  });
+
   constructor() { }
 
   ngOnInit() {

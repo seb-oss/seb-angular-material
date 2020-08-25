@@ -1,0 +1,90 @@
+body {
+
+  .mat-radio-group {
+
+    &.inline-flex {
+      display: inline-flex;
+    }
+
+    &.inline-grid {
+      display: inline-grid;
+    }
+
+    &.group-invalid {
+      border: 1px solid $vanilla-color-darkred1;
+      border-radius: 0.25em;
+    }
+  }
+
+  .mat-radio-button:not(.no-seb-style) {
+    border: 0.0625em solid $vanilla-color-grey400;
+    color: $vanilla-color-grey800;
+    border-radius: 0.25em;
+    min-height: 2.75rem;
+    line-height: 1.5;
+    font-size: 1em;
+    border-color: transparent;
+    margin-right: 0;
+
+    &.cdk-focused:not(.mat-radio-disabled),
+    &.cdk-mouse-focused:not(.mat-radio-disabled) {
+      border: 1px solid $vanilla-color-darkblue2;
+    }
+
+    &.cdk-focused:not(.mat-radio-disabled) .mat-radio-outer-circle,
+    &.cdk-mouse-focused:not(.mat-radio-disabled) .mat-radio-outer-circle {
+      border-color: $vanilla-color-darkblue2 !important;
+    }
+
+    &.cdk-focused:not(.mat-radio-disabled) .mat-radio-outer-circle::after,
+    &.cdk-mouse-focused:not(.mat-radio-disabled) .mat-radio-outer-circle::after {
+      display: block;
+      content: '';
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 4px $vanilla-color-darkblue2;
+      opacity: .25;
+      transition: all 2s ease-in;
+    }
+
+    .mat-radio-label {
+      .mat-radio-container {
+        width: 2.75rem;
+        height: 2.75rem;
+
+        .mat-radio-ripple {
+          display: none;
+        }
+
+        .mat-radio-outer-circle {
+          width: 1em;
+          height: 1em;
+          border-width: 1px;
+          border-color: $vanilla-color-grey500;
+          top: 0.875em;
+          left: 0.875em;
+        }
+
+        .mat-radio-inner-circle {
+          height: 1rem;
+          width: 1rem;
+          top: .875em;
+          left: .875em;
+        }
+      }
+
+      .mat-radio-label-content {
+        padding: 0.5em 0.75em 0.5em 0;
+      }
+    }
+
+    &:hover:not(.mat-radio-disabled) .mat-radio-container .mat-radio-outer-circle {
+      border-color: $vanilla-color-darkblue2;
+      transition: 250ms;
+    }
+  }
+}
