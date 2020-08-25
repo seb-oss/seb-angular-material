@@ -1,11 +1,7 @@
-@import "~@sebgroup/vanilla/src/components/inputs/radio";
-
 body {
-  .my-radio-wrap-class {
-    @include vanilla-field-radio-wrap();
-  }
 
   .mat-radio-group {
+
     &.inline-flex {
       display: inline-flex;
     }
