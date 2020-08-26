@@ -117,33 +117,9 @@
     <mat-card-subtitle>With [disableRipple]=&quot;true&quot;</mat-card-subtitle>
   </mat-card-header>
   <mat-checkbox [disableRipple]="true">Check me!</mat-checkbox>
+
   <br />
-  <mat-radio-group aria-label="Select an option">
-    <mat-radio-button [disableRipple]="true" value="1">Option 1</mat-radio-button>
-    <mat-radio-button [disabled]="true" [disableRipple]="true" value="2">Option 2</mat-radio-button>
-  </mat-radio-group>
-  <br />
-  <br />
-  <form [formGroup]="inlineRadioForm" novalidate>
-    <mat-radio-group class="inline-flex" formControlName="type" [ngClass]="{ 'group-invalid': inlineRadioForm.invalid }">
-      <mat-radio-button value="private">Private</mat-radio-button>
-      <mat-radio-button value="corporate">Corporate</mat-radio-button>
-    </mat-radio-group>
-    <mat-error *ngIf="inlineRadioForm.get('type').hasError('required')">
-      Select one of the options
-    </mat-error>
-  </form>
-  <br />
-  <form [formGroup]="listRadioForm" novalidate>
-    <mat-radio-group class="inline-grid" formControlName="longOption" [ngClass]="{ 'group-invalid': listRadioForm.invalid }">
-      <mat-radio-button value="long option">A very long option</mat-radio-button>
-      <mat-radio-button value="even longer option">And an even longer option</mat-radio-button>
-    </mat-radio-group>
-    <mat-error *ngIf="listRadioForm.get('longOption').hasError('required')">
-      Select one of the options
-    </mat-error>
-  </form>
-  <br />
+
   <mat-slide-toggle [disableRipple]="true">Slide me!</mat-slide-toggle>
 
   <mat-card-actions>
@@ -151,4 +127,57 @@
       More examples
     </a>
   </mat-card-actions>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Checkboxes</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <mat-checkbox [disableRipple]="true">I'm active</mat-checkbox>
+      <mat-checkbox [disabled]="true" [disableRipple]="true">I'm disabled</mat-checkbox>
+    </div>
+    <br />
+    <form [formGroup]="checkboxForm" novalidate>
+      <mat-checkbox formControlName="terms" [disableRipple]="true">I agree to the terms and conditions</mat-checkbox>
+      <mat-error *ngIf="checkboxForm.get('terms').hasError('required')">
+        You must agree to the terms to proceed
+      </mat-error>
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Radio button groups</mat-card-title>
+    <mat-card-subtitle> 'mat-radio-group' with either 'inline-flex' or 'inline-grid' classes (depending on which of the layouts you choose to use)</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button [disableRipple]="true" value="1">Option 1</mat-radio-button>
+      <mat-radio-button [disabled]="true" [disableRipple]="true" value="2">Option 2</mat-radio-button>
+    </mat-radio-group>
+    <br />
+    <br />
+    <form [formGroup]="inlineRadioForm" novalidate>
+      <mat-radio-group class="inline-flex" formControlName="type" [ngClass]="{ 'group-invalid': inlineRadioForm.invalid }">
+        <mat-radio-button value="private">Private</mat-radio-button>
+        <mat-radio-button value="corporate">Corporate</mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="inlineRadioForm.get('type').hasError('required')">
+        Select one of the options
+      </mat-error>
+    </form>
+    <br />
+    <form [formGroup]="listRadioForm" novalidate>
+      <mat-radio-group class="inline-grid" formControlName="longOption" [ngClass]="{ 'group-invalid': listRadioForm.invalid }">
+        <mat-radio-button value="long option">A very long option</mat-radio-button>
+        <mat-radio-button value="even longer option">And an even longer option</mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="listRadioForm.get('longOption').hasError('required')">
+        Select one of the options
+      </mat-error>
+    </form>
+  </mat-card-content>
 </mat-card>

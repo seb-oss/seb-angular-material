@@ -21,6 +21,10 @@ export class InputTextareaDemoComponent implements OnInit {
     longOption: new FormControl('', Validators.required)
   });
 
+  checkboxForm = new FormGroup({
+    terms: new FormControl('', Validators.requiredTrue)
+  });
+
   constructor() { }
 
   ngOnInit() {
