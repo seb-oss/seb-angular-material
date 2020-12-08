@@ -16,7 +16,8 @@
     "theme:pack": "npm run theme:compile && npm run theme:docs",
     "github-pages:deploy": "npx angular-cli-ghpages --dir=dist/seb-ng-material --repo=https://GH_TOKEN@github.com/sebgroup/seb-angular-material.git --no-silent",
     "travis-deploy-once": "travis-deploy-once --pro",
-    "semantic-release": "cd projects/seb-ng-material-theme && semantic-release"
+    "semantic-release": "cd projects/seb-ng-material-theme && semantic-release",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
