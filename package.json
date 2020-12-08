@@ -33,7 +33,7 @@
     "@sebgroup/vanilla": "^4.11.0",
     "core-js": "^2.6.11",
     "rimraf": "^3.0.0",
-    "rxjs": "^6.5.5",
+    "rxjs": "^6.6.3",
     "showdown": "^1.9.1",
     "tslib": "^2.0.0",
     "zone.js": "^0.10.3"
