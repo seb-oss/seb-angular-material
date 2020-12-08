@@ -1,4 +1,5 @@
-# SEB Angular Material [![Build Status](https://travis-ci.org/sebgroup/seb-angular-material.png?branch=master)](https://travis-ci.org/sebgroup/seb-angular-material)
+# SEB Angular Material 
+[![Build Status](https://travis-ci.org/sebgroup/seb-angular-material.png?branch=master)](https://travis-ci.org/sebgroup/seb-angular-material)
 
 This is SEB theme for [Angular Material components](https://material.angular.io)
 
