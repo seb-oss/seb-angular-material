@@ -3,7 +3,8 @@
 // For fonts to load, we need to change path to be relative to project root.
 $seb-font-path: '@sebgroup/fonts/fonts';
 
-@import '@sebgroup/fonts/scss/path';
+@import '../../src/assets/fonts.scss';
+// @import '@sebgroup/fonts/scss/path'; // angular can't seem to hash urls with variables in it
 
 $seb-typography: mat-typography-config($font-family: 'SEBSansSerif',
   $headline: mat-typography-level(32px, 48px, 700),
