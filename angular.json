@@ -35,7 +35,7 @@
             "styles": [
               "src/styles.scss",
               "src/layout/style.css",
-              "projects/seb-ng-material-theme/seb-mat-theme.scss",
+              "projects/seb-ng-material-theme/seb-mat-theme.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [],
@@ -56,7 +56,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
