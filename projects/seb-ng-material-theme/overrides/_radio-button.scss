@@ -3,15 +3,11 @@ body {
   .mat-radio-group {
 
     &.inline-flex {
-      display: -ms-inline-flexbox;
       display: inline-flex;
     }
 
     &.inline-grid {
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
+      display: inline-grid;
     }
 
     &.group-invalid {
