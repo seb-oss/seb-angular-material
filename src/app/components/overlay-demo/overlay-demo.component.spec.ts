@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { OverlayDemoComponent } from './overlay-demo.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 describe('OverlayDemoComponent', () => {
   let component: OverlayDemoComponent;
@@ -15,16 +14,7 @@ describe('OverlayDemoComponent', () => {
   beforeEach((done) => {
     TestBed.configureTestingModule({
       declarations: [OverlayDemoComponent],
-      providers: [
-        {
-          provide: MatSnackBar,
-          useValue: snackbarStub
-        },
-        {
-          provide: MatBottomSheet,
-          useValue: {}
-        }
-      ],
+      providers: [{ provide: MatSnackBar, useValue: snackbarStub }],
       schemas: [NO_ERRORS_SCHEMA],
     })
       .compileComponents()
