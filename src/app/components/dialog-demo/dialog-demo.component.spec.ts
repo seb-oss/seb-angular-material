@@ -1,5 +1,4 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DialogDemoComponent } from './dialog-demo.component';
 
@@ -7,15 +6,8 @@ describe('DialogDemoComponent', () => {
   let component: DialogDemoComponent;
   let fixture: ComponentFixture<DialogDemoComponent>;
 
-  beforeEach(waitForAsync(() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MatDialogModule],
-      providers: [
-        {
-          provide: MatDialogRef,
-          useValue: {}
-        }
-      ],
       declarations: [ DialogDemoComponent ]
     })
     .compileComponents();
