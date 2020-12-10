@@ -42,7 +42,6 @@
       line-height: 19px;
       padding: 12px 16px 12px 44px;
       position: absolute;
-      left: 14px;
     }
   }
 }
@@ -50,11 +49,4 @@
 .mat-checkbox:not(.mat-checkbox-disabled):hover .mat-checkbox-layout .mat-checkbox-frame {
     border-color: $vanilla-color-darkblue2;
 }
-
-// hack for stupid IE 11
-@media all and (-ms-high-contrast:none) {
-  _:-ms-fullscreen, :root .mat-checkbox-layout:not(.no-seb-style) .mat-checkbox-label { 
-    margin-top: -17px;
-  }
-} 
 
