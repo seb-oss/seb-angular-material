@@ -10,3 +10,10 @@ body {
   }
 
 }
+
+// datepicker input icon position fix for **IE11**
+@media all and (-ms-high-contrast:none) {
+  _:-ms-fullscreen, :root .mat-form-field:not(.no-seb-style) .mat-form-field-suffix .mat-icon-button {
+    margin-top: -30px;
+  }
+} 
