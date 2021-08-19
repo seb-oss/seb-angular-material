@@ -61,13 +61,24 @@
   </mat-card-content>
 
   <mat-card-header>
+    <mat-card-title>Datepicker with disabled dates</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-header>
     <mat-card-title>Datepicker</mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <mat-form-field appearance="outline">
-      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
+      <input matInput [matDatepicker]="myPicker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="myPicker"></mat-datepicker-toggle>
+      <mat-datepicker #myPicker></mat-datepicker>
     </mat-form-field>
   </mat-card-content>
 
@@ -151,7 +162,8 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>Radio button groups</mat-card-title>
-    <mat-card-subtitle> 'mat-radio-group' with either 'inline-flex' or 'inline-grid' classes (depending on which of the layouts you choose to use)</mat-card-subtitle>
+    <mat-card-subtitle> 'mat-radio-group' with either 'inline-flex' or 'inline-grid' classes (depending on which of the
+      layouts you choose to use)</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
     <mat-radio-group aria-label="Select an option">
@@ -161,7 +173,8 @@
     <br />
     <br />
     <form [formGroup]="inlineRadioForm" novalidate>
-      <mat-radio-group class="inline-flex" formControlName="type" [ngClass]="{ 'group-invalid': inlineRadioForm.invalid }">
+      <mat-radio-group class="inline-flex" formControlName="type"
+        [ngClass]="{ 'group-invalid': inlineRadioForm.invalid }">
         <mat-radio-button value="private">Private</mat-radio-button>
         <mat-radio-button value="corporate">Corporate</mat-radio-button>
       </mat-radio-group>
@@ -171,7 +184,8 @@
     </form>
     <br />
     <form [formGroup]="listRadioForm" novalidate>
-      <mat-radio-group class="inline-grid" formControlName="longOption" [ngClass]="{ 'group-invalid': listRadioForm.invalid }">
+      <mat-radio-group class="inline-grid" formControlName="longOption"
+        [ngClass]="{ 'group-invalid': listRadioForm.invalid }">
         <mat-radio-button value="long option">A very long option</mat-radio-button>
         <mat-radio-button value="even longer option">And an even longer option</mat-radio-button>
       </mat-radio-group>
