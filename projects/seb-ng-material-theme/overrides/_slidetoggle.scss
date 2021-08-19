@@ -10,14 +10,14 @@ body {
         .mat-slide-toggle-bar {
             height: 24px;
             width: 44px;
-            border: 1px solid #007AC7;
+            border: 1px solid $vanilla-color-darkblue2;
             border-radius: 19px;
         }
     }
 
     mat-slide-toggle:not(.no-seb-style).mat-slide-toggle.mat-checked {
         .mat-slide-toggle-bar {
-            background-color: #45B400;
+            background-color: $vanilla-color-darkgreen1;
         }
     
         .mat-slide-toggle-thumb-container {
@@ -43,7 +43,7 @@ body {
             .mat-slide-toggle-bar {
                 height: 32px;
                 width: 56px;
-                border: 1px solid #007AC7;
+                border: 1px solid $vanilla-color-darkblue2;
                 border-radius: 20px;
             }
         }
@@ -54,7 +54,7 @@ body {
             }
 
             .mat-slide-toggle-bar {
-                background-color: #45B400;
+                background-color: $vanilla-color-darkgreen1;
             }
         
             .mat-slide-toggle-thumb {
