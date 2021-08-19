@@ -9,11 +9,57 @@ body {
     }
   }
 
-}
+  mat-datepicker-content:not(.no-seb-style) {
+    .mat-calendar-body-cell-content {
+      border-radius: initial;
+    }
 
-// datepicker input icon position fix for **IE11**
-@media all and (-ms-high-contrast:none) {
-  _:-ms-fullscreen, :root .mat-form-field:not(.no-seb-style) .mat-form-field-suffix .mat-icon-button {
-    margin-top: -30px;
+    .mat-calendar-body-disabled {
+      &>.mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+        background-color: #e6e6e6;
+        color: #B3B3B3;
+      }
+
+      &:hover {
+        &::after {
+          content: 'This date is not selectable because it is a bank holiday';
+          position: absolute;
+          z-index: 2;
+          top: 40px;
+          left: 0;
+          width: 210px;
+          font-size: 16px;
+          line-height: 14px;
+          height: fit-content;
+          padding: 8px;
+          background-color: $vanilla-color-grey900;
+          color: $vanilla-color-white;
+        }
+      }
+    }
+
+    .mat-calendar-body-today:not(.mat-calendar-body-selected) {
+      background-color: #e6e6e6;
+      color: #B3B3B3;
+    }
+
+    td .mat-calendar-body-cell-content {
+      border: none;
+    }
+
+    .mat-calendar-next-button,
+    .mat-calendar-previous-button {
+      color: $vanilla-color-darkblue1 !important;
+      border-radius: initial;
+    }
   }
-} 
+
+  // datepicker input icon position fix for **IE11**
+  @media all and (-ms-high-contrast:none) {
+
+    _:-ms-fullscreen,
+    :root .mat-form-field:not(.no-seb-style) .mat-form-field-suffix .mat-icon-button {
+      margin-top: -30px;
+    }
+  }
+}
