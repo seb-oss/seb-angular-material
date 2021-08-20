@@ -59,9 +59,23 @@ body {
     padding: 0 1em;
     border: 1px solid transparent;
 
+    &:active,
+    &:hover {
+      background-color: $vanilla-color-blue;
+    }
+
+    &:focus {
+      background-color: $vanilla-color-darkblue2;
+      color: white;
+    }
+
     &[color="secondary"] {
       border-color: $vanilla-color-darkblue1;
       background-color: transparent;
+
+      &:focus {
+        background-color: $vanilla-color-darkblue2;
+      }
 
       &[disabled] {
         border-color: $vanilla-color-grey300;
@@ -85,7 +99,8 @@ body {
     color: $vanilla-color-white;
 
     &:active,
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $vanilla-color-white;
       color: $vanilla-color-grey800;
       border-color: $vanilla-color-white;
@@ -105,7 +120,8 @@ body {
     border: 1px solid $vanilla-color-grey800;
 
     &:active,
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $vanilla-color-grey800;
       color: $vanilla-color-white;
       border-color: $vanilla-color-grey800;
