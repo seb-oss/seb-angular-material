@@ -61,4 +61,4 @@ $seb-mat-light-green-theme: seb-mat-light-theme($vanilla-color-green);
 @include mat-tooltip-theme($seb-mat-light-darkblue1-theme);
 @include mat-snack-bar-theme($seb-mat-light-darkblue1-theme);
 
-@import '_overrides';
+@import 'overrides';
