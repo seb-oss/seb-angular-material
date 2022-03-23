@@ -28,40 +28,36 @@ import { ChipDemoComponent } from './components/chip-demo/chip-demo.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BadgeDemoComponent,
-    BottomSheetOverviewExampleSheetComponent,
-    ButtonDemoComponent,
-    ButtonToggleDemoComponent,
-    CollapseDemoComponent,
-    FooterComponent,
-    HeaderComponent,
-    InputTextareaDemoComponent,
-    MarkdownViewerComponent,
-    OverlayDemoComponent,
-    TableDemoComponent,
-    TabsDemoComponent,
-    TooltipDemoComponent,
-    DialogDemoComponent,
-    DialogExampleComponent,
-    ChipDemoComponent,
-  ],
-  entryComponents: [
-    BottomSheetOverviewExampleSheetComponent,
-    DialogExampleComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MaterialModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    FormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        BadgeDemoComponent,
+        BottomSheetOverviewExampleSheetComponent,
+        ButtonDemoComponent,
+        ButtonToggleDemoComponent,
+        CollapseDemoComponent,
+        FooterComponent,
+        HeaderComponent,
+        InputTextareaDemoComponent,
+        MarkdownViewerComponent,
+        OverlayDemoComponent,
+        TableDemoComponent,
+        TabsDemoComponent,
+        TooltipDemoComponent,
+        DialogDemoComponent,
+        DialogExampleComponent,
+        ChipDemoComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MaterialModule,
+        ReactiveFormsModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        FormsModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(
