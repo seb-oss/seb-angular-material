@@ -10,10 +10,10 @@
     "url": "https://github.com/sebgroup/seb-angular-material"
   },
   "peerDependencies": {
-    "@angular/material": "^11.0.2"
+    "@angular/material": "^12.0.0"
   },
   "dependencies": {
-    "@sebgroup/vanilla": "^4.5.2"
+    "@sebgroup/vanilla": "^5.3.3"
   },
   "license": "Apache-2.0"
 }
